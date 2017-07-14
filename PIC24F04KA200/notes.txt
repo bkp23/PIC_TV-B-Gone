@@ -1,0 +1,17 @@
+Uses PGC2/PGD2 for debugging
+RB15 is connected to RB15 on the XLP Board
+
+
+
+PWM:
+ set period (PRy)
+ Set duty cycle (OC1RS)
+ Set initial duty cycle (OC1RS)
+ Enable interrupts?
+ Configure output compare module (OCM<2:0> or OC1CON<2:0>)
+ Set TMRy prescale (TCKPS<1:0>) & enable (TON.TxCON<15>=1)
+
+PWM Period = (PRy +1) * Tcy * (Timer Prescale value)
+where Tcy = 2*Tosc
+      Fcy = Fcy/2
+

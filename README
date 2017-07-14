@@ -1,0 +1,47 @@
+Based on the original TV-B-Gone by Lady Ada. Modified and post with permission.
+
+Pros:
+  * Has both start and stop buttons
+  * More energy efficient
+      Uses 80% less power in (deep) sleep mode
+      Stop button saves running power
+  * External oscillator optional due to PIC's more accurate internal clock
+Cons:
+  * Programmer is more expensive
+Verdict:
+  * Use only if you already have access to a programmer
+
+
+Recommended list of parts:
+
+  Ex. PART #           DESCRIPTION                          Price
+  -------------  -------------------------------------      -------
+  PIC24F08KA101  Microchip Low-power MCU                    $2.94
+  1-390261-6     20-position IC socket    (RECOMMENDED)     $0.23
+  SR295E104MAR   0.10 uF, 20+V ceramic capacitor (OPT)      $0.13
+  (stock)        100 uF capacitor                           $0.11
+  (stock)        160 Ohm resistor (x2)                      $0.08 x2
+  MPSW01AG       NPN 1W transistor (x2)                     $0.40 x2
+  751-1203-ND    IR LED (wide output)                       $0.55
+  SFH 4511       IR LED (narrow output)                     $0.53
+  FCR8.0MC5      8 MHz resonator             (OPTIONAL)     $0.33
+  BC22AAL        2-AA battery holder                        $0.71
+  PTS645SL43     6mm SPST tact switch, black                $0.13
+  PTS645SK43     6mm SPST tact switch, red   (OPTIONAL)     $0.13*
+  (stock)        100 Ohm resistor            (OPTIONAL)     $0.08*
+  LTL-307GE      LED (~2.1V forward bias)    (OPTIONAL)     $0.09*
+                                                            =======
+                                                            $6.92
+
+Specific part numbers are just examples. Other parts may work just as
+well. Prices are quoted from digikey.com and will be less expensive
+in larger quantities. (Prices are probably outdated by the time you
+read this, too, but they'll still provide a reference.)
+
+
+Variants:
+  This project was designed to run off of 3V (2-AA batteries) or 4.5V
+(3-AA batteries). 4.5V will offer increased power output, but I haven't
+tested it.
+  Add a junction to pin 1!
+

@@ -1,0 +1,1595 @@
+Microchip Technology Inc, vv3_23 (0) >
+
+Tool Name:
+  c:\program files\microchip\mplab c30\bin\bin\..\bin/pic30-coff-ld.exe
+
+Command:
+  -p24F08KA101 \
+  -oTV-B-Gone.cof \
+  -Lc:/program files/microchip/mplab c30/bin/bin/.. \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../lib \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../support/generic/gld \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../lib/PIC24F \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../lib/PIC24H \
+  -Lc:/program files/microchip/mplab c30/bin/bin/../../support/PIC24H/gld \
+  main.o \
+  WORLDcodes.o \
+  -LC:\Program Files\Microchip\MPLAB C30\lib \
+  -Tp24F08KA101.gld.00 \
+  --defsym=__MPLAB_BUILD=1 \
+  -Map=TV-B-Gone.map \
+  --report-mem \
+  -start-group \
+  --library=pic30-coff \
+  --library=m-coff \
+  --library=c-coff \
+  -end-group \
+
+Archive member included because of file (symbol)
+
+c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(crt0_standard.o)
+                              (_resetPRI)
+c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(delay32.o)
+                              main.o (__delay32)
+c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(data_init_standard.o)
+                              c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(crt0_standard.o) (_data_init_standard)
+
+
+Program Memory  [Origin = 0x200, Length = 0x13ff]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200                0x90            0xd8  (216)
+.const                       0x290              0x10ce          0x1935  (6453)
+.text                       0x135e               0x100           0x180  (384)
+.dinit                      0x145e                0xc0           0x120  (288)
+.text                       0x151e                0x1c            0x2a  (42)
+.isr                        0x153a                 0x2             0x3  (3)
+
+                     Total program memory used (bytes):         0x1cda  (7386) 96%
+
+
+Data Memory  [Origin = 0x800, Length = 0x600]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+.ndata                       0x800                   0           0x112  (274)
+
+                        Total data memory used (bytes):          0x112  (274) 17%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                        0x912                               0x4ee  (1262)
+
+                        Maximum dynamic memory (bytes):          0x4ee  (1262)
+
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  _NApowerCodes
+                    0x0800                  _EUpowerCodes
+
+External Symbols in Data Memory (by name):
+
+                    0x0800                  _EUpowerCodes
+                    0x0800                  _NApowerCodes
+
+External Symbols in Program Memory (by address):
+
+                  0x000200                  __resetPRI
+                  0x000222                  __psv_init
+                  0x000232                  __data_init_standard
+                  0x000232                  __data_init
+                  0x000290                  _num_EUcodes
+                  0x000291                  _num_NAcodes
+                  0x000292                  _code_na136Code
+                  0x0002b8                  _code_na136Times
+                  0x0002d0                  _code_na135Code
+                  0x0002f6                  _code_na135Times
+                  0x00030a                  _code_na134Code
+                  0x00032a                  _code_na133Code
+                  0x000338                  _code_na133Times
+                  0x00034c                  _code_na132Code
+                  0x00035a                  _code_na132Times
+                  0x00036a                  _code_na131Code
+                  0x00037e                  _code_na130Code
+                  0x000398                  _code_na130Times
+                  0x0003ac                  _code_na129Code
+                  0x0003c0                  _code_na128Code
+                  0x0003da                  _code_na127Code
+                  0x0003e2                  _code_na127Times
+                  0x0003f2                  _code_na126Code
+                  0x000406                  _code_na125Code
+                  0x00041a                  _code_na124Code
+                  0x00042e                  _code_na124Times
+                  0x000446                  _code_na123Code
+                  0x00045a                  _code_na122Code
+                  0x000472                  _code_na122Times
+                  0x000486                  _code_na121Code
+                  0x00049a                  _code_na120Code
+                  0x0004ae                  _code_na119Code
+                  0x0004c2                  _code_na119Times
+                  0x0004da                  _code_na118Code
+                  0x0004ee                  _code_na117Code
+                  0x000502                  _code_na117Times
+                  0x00051a                  _code_na116Code
+                  0x00052e                  _code_na115Code
+                  0x000548                  _code_na115Times
+                  0x00055c                  _code_na114Code
+                  0x000570                  _code_na114Times
+                  0x000588                  _code_na113Code
+                  0x0005a8                  _code_na113Times
+                  0x0005bc                  _code_na112Code
+                  0x0005d0                  _code_na111Code
+                  0x0005e4                  _code_na110Code
+                  0x0005f8                  _code_na109Code
+                  0x00060c                  _code_na109Times
+                  0x000624                  _code_na108Code
+                  0x000638                  _code_na107Code
+                  0x00064c                  _code_na106Code
+                  0x000660                  _code_na105Code
+                  0x000674                  _code_na104Code
+                  0x000688                  _code_na103Code
+                  0x00069c                  _code_na102Code
+                  0x0006b6                  _code_na102Times
+                  0x0006ca                  _code_na101Code
+                  0x0006de                  _code_na100Code
+                  0x0006ec                  _code_na100Times
+                  0x0006fc                  _code_na099Code
+                  0x000710                  _code_na098Code
+                  0x000724                  _code_na097Code
+                  0x000738                  _code_na096Code
+                  0x00074c                  _code_na095Code
+                  0x000760                  _code_na095Times
+                  0x000774                  _code_na094Code
+                  0x000782                  _code_na093Code
+                  0x0007a2                  _code_na093Times
+                  0x0007b6                  _code_na092Code
+                  0x0007cc                  _code_na092Times
+                  0x0007dc                  _code_na091Code
+                  0x0007ee                  _code_na091Times
+                  0x0007fe                  _code_na090Code
+                  0x00080c                  _code_na090Times
+                  0x000824                  _code_na089Code
+                  0x000838                  _code_na088Code
+                  0x00084c                  _code_na087Code
+                  0x000860                  _code_na087Times
+                  0x000878                  _code_na086Code
+                  0x0008a4                  _code_na086Times
+                  0x0008b8                  _code_na085Code
+                  0x0008ce                  _code_na085Times
+                  0x0008e2                  _code_na084Code
+                  0x00090e                  _code_na084Times
+                  0x000922                  _code_na083Code
+                  0x000930                  _code_na082Code
+                  0x00093e                  _code_na082Times
+                  0x000956                  _code_na081Code
+                  0x000966                  _code_na081Times
+                  0x000976                  _code_na080Code
+                  0x000982                  _code_na079Code
+                  0x000996                  _code_na078Code
+                  0x0009a4                  _code_na078Times
+                  0x0009b0                  _code_na077Code
+                  0x0009be                  _code_na076Code
+                  0x0009d2                  _code_na075Code
+                  0x0009ec                  _code_na075Times
+                  0x000a00                  _code_na074Code
+                  0x000a14                  _code_na073Code
+                  0x000a28                  _code_na072Code
+                  0x000a3c                  _code_na071Code
+                  0x000a44                  _code_na071Times
+                  0x000a4c                  _code_na070Code
+                  0x000a5a                  _code_na070Times
+                  0x000a6a                  _code_na069Code
+                  0x000a7e                  _code_na068Code
+                  0x000a8a                  _code_na068Times
+                  0x000a9a                  _code_na067Code
+                  0x000aae                  _code_na066Code
+                  0x000abc                  _code_na066Times
+                  0x000acc                  _code_na065Code
+                  0x000af0                  _code_na065Times
+                  0x000b04                  _code_na064Code
+                  0x000b16                  _code_na063Code
+                  0x000b2a                  _code_na062Code
+                  0x000b3e                  _code_na061Code
+                  0x000b52                  _code_na060Code
+                  0x000b66                  _code_na059Code
+                  0x000b7a                  _code_na058Code
+                  0x000b86                  _code_na058Times
+                  0x000b9a                  _code_na057Code
+                  0x000ba4                  _code_na057Times
+                  0x000bb4                  _code_na056Code
+                  0x000bbc                  _code_na056Times
+                  0x000bcc                  _code_na055Code
+                  0x000bd8                  _code_na055Times
+                  0x000be8                  _code_na054Code
+                  0x000bf4                  _code_na053Code
+                  0x000c02                  _code_na053Times
+                  0x000c12                  _code_na052Code
+                  0x000c26                  _code_na051Code
+                  0x000c3a                  _code_na050Code
+                  0x000c4c                  _code_na050Times
+                  0x000c5c                  _code_na049Code
+                  0x000c64                  _code_na049Times
+                  0x000c6c                  _code_na048Code
+                  0x000c80                  _code_na047Code
+                  0x000c94                  _code_na046Code
+                  0x000ca2                  _code_na046Times
+                  0x000cbe                  _code_na045Code
+                  0x000cd2                  _code_na045Times
+                  0x000cea                  _code_na044Code
+                  0x000cfe                  _code_na044Times
+                  0x000d16                  _code_na043Code
+                  0x000d22                  _code_na043Times
+                  0x000d32                  _code_na042Code
+                  0x000d46                  _code_na042Times
+                  0x000d5e                  _code_na041Code
+                  0x000d6a                  _code_na041Times
+                  0x000d7a                  _code_na040Code
+                  0x000d82                  _code_na040Times
+                  0x000d8e                  _code_na039Code
+                  0x000d94                  _code_na039Times
+                  0x000d9c                  _code_na038Code
+                  0x000db0                  _code_na037Code
+                  0x000db8                  _code_na037Times
+                  0x000dc4                  _code_na036Code
+                  0x000dcc                  _code_na036Times
+                  0x000ddc                  _code_na035Code
+                  0x000de8                  _code_na035Times
+                  0x000df8                  _code_na034Code
+                  0x000e0c                  _code_na033Code
+                  0x000e38                  _code_na033Times
+                  0x000e4c                  _code_na032Code
+                  0x000e60                  _code_na031Code
+                  0x000e6e                  _code_na031Times
+                  0x000e82                  _code_na030Code
+                  0x000e96                  _code_na029Code
+                  0x000ea4                  _code_na029Times
+                  0x000eb8                  _code_na028Code
+                  0x000ec6                  _code_na028Times
+                  0x000ed6                  _code_na027Code
+                  0x000ee8                  _code_na026Code
+                  0x000efa                  _code_na026Times
+                  0x000f0e                  _code_na025Code
+                  0x000f28                  _code_na025Times
+                  0x000f3c                  _code_na024Code
+                  0x000f4c                  _code_na024Times
+                  0x000f60                  _code_na023Code
+                  0x000f70                  _code_na023Times
+                  0x000f80                  _code_na022Code
+                  0x000f94                  _code_na022Times
+                  0x000fac                  _code_na021Code
+                  0x000fc0                  _code_na021Times
+                  0x000fd4                  _code_na020Code
+                  0x000fe8                  _code_na020Times
+                  0x001004                  _code_na019Code
+                  0x001030                  _code_na019Times
+                  0x001044                  _code_na018Code
+                  0x00107c                  _code_na018Times
+                  0x001090                  _code_na017Code
+                  0x0010a4                  _code_na017Times
+                  0x0010bc                  _code_na016Code
+                  0x0010ca                  _code_na016Times
+                  0x0010d6                  _code_na015Code
+                  0x0010ea                  _code_na014Code
+                  0x0010fe                  _code_na013Code
+                  0x001116                  _code_na013Times
+                  0x00112e                  _code_na012Code
+                  0x001148                  _code_na012Times
+                  0x00115c                  _code_na011Code
+                  0x001170                  _code_na011Times
+                  0x00118c                  _code_na010Code
+                  0x00119e                  _code_na010Times
+                  0x0011ae                  _code_na009Code
+                  0x0011c2                  _code_na009Times
+                  0x0011da                  _code_na008Code
+                  0x0011fa                  _code_na008Times
+                  0x00120e                  _code_na007Code
+                  0x001220                  _code_na007Times
+                  0x001234                  _code_na006Code
+                  0x001254                  _code_na006Times
+                  0x001268                  _code_na005Code
+                  0x001276                  _code_na005Times
+                  0x00128a                  _code_na004Code
+                  0x00129e                  _code_na004Times
+                  0x0012ba                  _code_na003Code
+                  0x0012d0                  _code_na003Times
+                  0x0012e0                  _code_na002Code
+                  0x00130c                  _code_na002Times
+                  0x001320                  _code_na001Code
+                  0x001332                  _code_na001Times
+                  0x001342                  _code_na000Code
+                  0x00134e                  _code_na000Times
+                  0x00135e                  _startPWM
+                  0x001376                  _stopPWM
+                  0x00137e                  _readBits
+                  0x0013b0                  _delay_ten_us
+                  0x0013b8                  _xmitCodeElement
+                  0x0013e0                  _main
+                  0x00151e                  ___delay32
+                  0x00153a                  __DefaultInterrupt
+
+External Symbols in Program Memory (by name):
+
+                  0x00153a                  __DefaultInterrupt
+                  0x00151e                  ___delay32
+                  0x000232                  __data_init
+                  0x000232                  __data_init_standard
+                  0x000222                  __psv_init
+                  0x000200                  __resetPRI
+                  0x001342                  _code_na000Code
+                  0x00134e                  _code_na000Times
+                  0x001320                  _code_na001Code
+                  0x001332                  _code_na001Times
+                  0x0012e0                  _code_na002Code
+                  0x00130c                  _code_na002Times
+                  0x0012ba                  _code_na003Code
+                  0x0012d0                  _code_na003Times
+                  0x00128a                  _code_na004Code
+                  0x00129e                  _code_na004Times
+                  0x001268                  _code_na005Code
+                  0x001276                  _code_na005Times
+                  0x001234                  _code_na006Code
+                  0x001254                  _code_na006Times
+                  0x00120e                  _code_na007Code
+                  0x001220                  _code_na007Times
+                  0x0011da                  _code_na008Code
+                  0x0011fa                  _code_na008Times
+                  0x0011ae                  _code_na009Code
+                  0x0011c2                  _code_na009Times
+                  0x00118c                  _code_na010Code
+                  0x00119e                  _code_na010Times
+                  0x00115c                  _code_na011Code
+                  0x001170                  _code_na011Times
+                  0x00112e                  _code_na012Code
+                  0x001148                  _code_na012Times
+                  0x0010fe                  _code_na013Code
+                  0x001116                  _code_na013Times
+                  0x0010ea                  _code_na014Code
+                  0x0010d6                  _code_na015Code
+                  0x0010bc                  _code_na016Code
+                  0x0010ca                  _code_na016Times
+                  0x001090                  _code_na017Code
+                  0x0010a4                  _code_na017Times
+                  0x001044                  _code_na018Code
+                  0x00107c                  _code_na018Times
+                  0x001004                  _code_na019Code
+                  0x001030                  _code_na019Times
+                  0x000fd4                  _code_na020Code
+                  0x000fe8                  _code_na020Times
+                  0x000fac                  _code_na021Code
+                  0x000fc0                  _code_na021Times
+                  0x000f80                  _code_na022Code
+                  0x000f94                  _code_na022Times
+                  0x000f60                  _code_na023Code
+                  0x000f70                  _code_na023Times
+                  0x000f3c                  _code_na024Code
+                  0x000f4c                  _code_na024Times
+                  0x000f0e                  _code_na025Code
+                  0x000f28                  _code_na025Times
+                  0x000ee8                  _code_na026Code
+                  0x000efa                  _code_na026Times
+                  0x000ed6                  _code_na027Code
+                  0x000eb8                  _code_na028Code
+                  0x000ec6                  _code_na028Times
+                  0x000e96                  _code_na029Code
+                  0x000ea4                  _code_na029Times
+                  0x000e82                  _code_na030Code
+                  0x000e60                  _code_na031Code
+                  0x000e6e                  _code_na031Times
+                  0x000e4c                  _code_na032Code
+                  0x000e0c                  _code_na033Code
+                  0x000e38                  _code_na033Times
+                  0x000df8                  _code_na034Code
+                  0x000ddc                  _code_na035Code
+                  0x000de8                  _code_na035Times
+                  0x000dc4                  _code_na036Code
+                  0x000dcc                  _code_na036Times
+                  0x000db0                  _code_na037Code
+                  0x000db8                  _code_na037Times
+                  0x000d9c                  _code_na038Code
+                  0x000d8e                  _code_na039Code
+                  0x000d94                  _code_na039Times
+                  0x000d7a                  _code_na040Code
+                  0x000d82                  _code_na040Times
+                  0x000d5e                  _code_na041Code
+                  0x000d6a                  _code_na041Times
+                  0x000d32                  _code_na042Code
+                  0x000d46                  _code_na042Times
+                  0x000d16                  _code_na043Code
+                  0x000d22                  _code_na043Times
+                  0x000cea                  _code_na044Code
+                  0x000cfe                  _code_na044Times
+                  0x000cbe                  _code_na045Code
+                  0x000cd2                  _code_na045Times
+                  0x000c94                  _code_na046Code
+                  0x000ca2                  _code_na046Times
+                  0x000c80                  _code_na047Code
+                  0x000c6c                  _code_na048Code
+                  0x000c5c                  _code_na049Code
+                  0x000c64                  _code_na049Times
+                  0x000c3a                  _code_na050Code
+                  0x000c4c                  _code_na050Times
+                  0x000c26                  _code_na051Code
+                  0x000c12                  _code_na052Code
+                  0x000bf4                  _code_na053Code
+                  0x000c02                  _code_na053Times
+                  0x000be8                  _code_na054Code
+                  0x000bcc                  _code_na055Code
+                  0x000bd8                  _code_na055Times
+                  0x000bb4                  _code_na056Code
+                  0x000bbc                  _code_na056Times
+                  0x000b9a                  _code_na057Code
+                  0x000ba4                  _code_na057Times
+                  0x000b7a                  _code_na058Code
+                  0x000b86                  _code_na058Times
+                  0x000b66                  _code_na059Code
+                  0x000b52                  _code_na060Code
+                  0x000b3e                  _code_na061Code
+                  0x000b2a                  _code_na062Code
+                  0x000b16                  _code_na063Code
+                  0x000b04                  _code_na064Code
+                  0x000acc                  _code_na065Code
+                  0x000af0                  _code_na065Times
+                  0x000aae                  _code_na066Code
+                  0x000abc                  _code_na066Times
+                  0x000a9a                  _code_na067Code
+                  0x000a7e                  _code_na068Code
+                  0x000a8a                  _code_na068Times
+                  0x000a6a                  _code_na069Code
+                  0x000a4c                  _code_na070Code
+                  0x000a5a                  _code_na070Times
+                  0x000a3c                  _code_na071Code
+                  0x000a44                  _code_na071Times
+                  0x000a28                  _code_na072Code
+                  0x000a14                  _code_na073Code
+                  0x000a00                  _code_na074Code
+                  0x0009d2                  _code_na075Code
+                  0x0009ec                  _code_na075Times
+                  0x0009be                  _code_na076Code
+                  0x0009b0                  _code_na077Code
+                  0x000996                  _code_na078Code
+                  0x0009a4                  _code_na078Times
+                  0x000982                  _code_na079Code
+                  0x000976                  _code_na080Code
+                  0x000956                  _code_na081Code
+                  0x000966                  _code_na081Times
+                  0x000930                  _code_na082Code
+                  0x00093e                  _code_na082Times
+                  0x000922                  _code_na083Code
+                  0x0008e2                  _code_na084Code
+                  0x00090e                  _code_na084Times
+                  0x0008b8                  _code_na085Code
+                  0x0008ce                  _code_na085Times
+                  0x000878                  _code_na086Code
+                  0x0008a4                  _code_na086Times
+                  0x00084c                  _code_na087Code
+                  0x000860                  _code_na087Times
+                  0x000838                  _code_na088Code
+                  0x000824                  _code_na089Code
+                  0x0007fe                  _code_na090Code
+                  0x00080c                  _code_na090Times
+                  0x0007dc                  _code_na091Code
+                  0x0007ee                  _code_na091Times
+                  0x0007b6                  _code_na092Code
+                  0x0007cc                  _code_na092Times
+                  0x000782                  _code_na093Code
+                  0x0007a2                  _code_na093Times
+                  0x000774                  _code_na094Code
+                  0x00074c                  _code_na095Code
+                  0x000760                  _code_na095Times
+                  0x000738                  _code_na096Code
+                  0x000724                  _code_na097Code
+                  0x000710                  _code_na098Code
+                  0x0006fc                  _code_na099Code
+                  0x0006de                  _code_na100Code
+                  0x0006ec                  _code_na100Times
+                  0x0006ca                  _code_na101Code
+                  0x00069c                  _code_na102Code
+                  0x0006b6                  _code_na102Times
+                  0x000688                  _code_na103Code
+                  0x000674                  _code_na104Code
+                  0x000660                  _code_na105Code
+                  0x00064c                  _code_na106Code
+                  0x000638                  _code_na107Code
+                  0x000624                  _code_na108Code
+                  0x0005f8                  _code_na109Code
+                  0x00060c                  _code_na109Times
+                  0x0005e4                  _code_na110Code
+                  0x0005d0                  _code_na111Code
+                  0x0005bc                  _code_na112Code
+                  0x000588                  _code_na113Code
+                  0x0005a8                  _code_na113Times
+                  0x00055c                  _code_na114Code
+                  0x000570                  _code_na114Times
+                  0x00052e                  _code_na115Code
+                  0x000548                  _code_na115Times
+                  0x00051a                  _code_na116Code
+                  0x0004ee                  _code_na117Code
+                  0x000502                  _code_na117Times
+                  0x0004da                  _code_na118Code
+                  0x0004ae                  _code_na119Code
+                  0x0004c2                  _code_na119Times
+                  0x00049a                  _code_na120Code
+                  0x000486                  _code_na121Code
+                  0x00045a                  _code_na122Code
+                  0x000472                  _code_na122Times
+                  0x000446                  _code_na123Code
+                  0x00041a                  _code_na124Code
+                  0x00042e                  _code_na124Times
+                  0x000406                  _code_na125Code
+                  0x0003f2                  _code_na126Code
+                  0x0003da                  _code_na127Code
+                  0x0003e2                  _code_na127Times
+                  0x0003c0                  _code_na128Code
+                  0x0003ac                  _code_na129Code
+                  0x00037e                  _code_na130Code
+                  0x000398                  _code_na130Times
+                  0x00036a                  _code_na131Code
+                  0x00034c                  _code_na132Code
+                  0x00035a                  _code_na132Times
+                  0x00032a                  _code_na133Code
+                  0x000338                  _code_na133Times
+                  0x00030a                  _code_na134Code
+                  0x0002d0                  _code_na135Code
+                  0x0002f6                  _code_na135Times
+                  0x000292                  _code_na136Code
+                  0x0002b8                  _code_na136Times
+                  0x0013b0                  _delay_ten_us
+                  0x0013e0                  _main
+                  0x000290                  _num_EUcodes
+                  0x000291                  _num_NAcodes
+                  0x00137e                  _readBits
+                  0x00135e                  _startPWM
+                  0x001376                  _stopPWM
+                  0x0013b8                  _xmitCodeElement
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+data             0x000800           0x000600           a !xr
+reset            0x000000           0x000004  
+ivt              0x000004           0x0000fc  
+aivt             0x000104           0x0000fc  
+program          0x000200           0x0013ff           xr
+eedata           0x7ffe00           0x000200  
+FBS              0xf80000           0x000002  
+FGS              0xf80004           0x000002  
+FOSCSEL          0xf80006           0x000002  
+FOSC             0xf80008           0x000002  
+FWDT             0xf8000a           0x000002  
+FPOR             0xf8000c           0x000002  
+FICD             0xf8000e           0x000002  
+FDS              0xf80010           0x000002  
+*default*        0x000000           0xffffffff  
+
+Linker script and memory map
+
+LOAD main.o
+LOAD WORLDcodes.o
+LOAD c:/program files/microchip/mplab c30/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-coff.a
+                    0xf80000                  __FBS = 0xf80000
+                    0xf80004                  __FGS = 0xf80004
+                    0xf80006                  __FOSCSEL = 0xf80006
+                    0xf80008                  __FOSC = 0xf80008
+                    0xf8000a                  __FWDT = 0xf8000a
+                    0xf8000c                  __FPOR = 0xf8000c
+                    0xf8000e                  __FICD = 0xf8000e
+                    0xf80010                  __FDS = 0xf80010
+                    0x0001                  __NO_HANDLES = 0x1
+                    0x0004                  __IVT_BASE = 0x4
+                    0x0104                  __AIVT_BASE = 0x104
+                    0x0800                  __DATA_BASE = 0x800
+                    0x0200                  __CODE_BASE = 0x200
+
+.reset            0x000000          0x4
+                  0x000000          0x2 SHORT 0x200 <code 339> (__reset)
+                  0x000001          0x2 SHORT 0x4
+                  0x000002          0x2 SHORT 0x0 ((<code 339> (__reset) >> 0x10) & 0x7f)
+                  0x000003          0x2 SHORT 0x0
+
+.text             0x000200         0x90
+ *(.init)
+ .init            0x000200         0x32 c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(crt0_standard.o)
+                  0x000200                  _resetPRI
+                  0x000200                  _reset
+                  0x000222                  _psv_init
+ .init            0x000232         0x5e c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(data_init_standard.o)
+                  0x000232                  _data_init_standard
+                  0x000232                  _data_init
+ *(.user_init)
+ *(.handle)
+ *(.libc)
+ *(.libm)
+ *(.libdsp)
+ *(.lib*)
+
+usercode
+ *(usercode)
+
+__FBS
+ *(__FBS.sec)
+
+__FGS
+ *(__FGS.sec)
+
+__FOSCSEL         0xf80006          0x2
+ *(__FOSCSEL.sec)
+ __FOSCSEL.sec    0xf80006          0x2 main.o
+
+__FOSC            0xf80008          0x2
+ *(__FOSC.sec)
+ __FOSC.sec       0xf80008          0x2 main.o
+
+__FWDT            0xf8000a          0x2
+ *(__FWDT.sec)
+ __FWDT.sec       0xf8000a          0x2 main.o
+
+__FPOR            0xf8000c          0x2
+ *(__FPOR.sec)
+ __FPOR.sec       0xf8000c          0x2 main.o
+
+__FICD            0xf8000e          0x2
+ *(__FICD.sec)
+ __FICD.sec       0xf8000e          0x2 main.o
+
+__FDS             0xf80010          0x2
+ *(__FDS.sec)
+ __FDS.sec        0xf80010          0x2 main.o
+
+.comment
+ *(.comment)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.ivt              0x000004         0xfc
+                  0x000004          0x4 LONG 0x153a DEFINED (__ReservedTrap0)?<code 339> (__ReservedTrap0):<code 339> (__DefaultInterrupt)
+                  0x000006          0x4 LONG 0x153a DEFINED (__OscillatorFail)?<code 339> (__OscillatorFail):<code 339> (__DefaultInterrupt)
+                  0x000008          0x4 LONG 0x153a DEFINED (__AddressError)?<code 339> (__AddressError):<code 339> (__DefaultInterrupt)
+                  0x00000a          0x4 LONG 0x153a DEFINED (__StackError)?<code 339> (__StackError):<code 339> (__DefaultInterrupt)
+                  0x00000c          0x4 LONG 0x153a DEFINED (__MathError)?<code 339> (__MathError):<code 339> (__DefaultInterrupt)
+                  0x00000e          0x4 LONG 0x153a DEFINED (__ReservedTrap5)?<code 339> (__ReservedTrap5):<code 339> (__DefaultInterrupt)
+                  0x000010          0x4 LONG 0x153a DEFINED (__ReservedTrap6)?<code 339> (__ReservedTrap6):<code 339> (__DefaultInterrupt)
+                  0x000012          0x4 LONG 0x153a DEFINED (__ReservedTrap7)?<code 339> (__ReservedTrap7):<code 339> (__DefaultInterrupt)
+                  0x000014          0x4 LONG 0x153a DEFINED (__INT0Interrupt)?<code 339> (__INT0Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000016          0x4 LONG 0x153a DEFINED (__IC1Interrupt)?<code 339> (__IC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000018          0x4 LONG 0x153a DEFINED (__OC1Interrupt)?<code 339> (__OC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00001a          0x4 LONG 0x153a DEFINED (__T1Interrupt)?<code 339> (__T1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00001c          0x4 LONG 0x153a DEFINED (__Interrupt4)?<code 339> (__Interrupt4):<code 339> (__DefaultInterrupt)
+                  0x00001e          0x4 LONG 0x153a DEFINED (__Interrupt5)?<code 339> (__Interrupt5):<code 339> (__DefaultInterrupt)
+                  0x000020          0x4 LONG 0x153a DEFINED (__Interrupt6)?<code 339> (__Interrupt6):<code 339> (__DefaultInterrupt)
+                  0x000022          0x4 LONG 0x153a DEFINED (__T2Interrupt)?<code 339> (__T2Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000024          0x4 LONG 0x153a DEFINED (__T3Interrupt)?<code 339> (__T3Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000026          0x4 LONG 0x153a DEFINED (__SPI1ErrInterrupt)?<code 339> (__SPI1ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000028          0x4 LONG 0x153a DEFINED (__SPI1Interrupt)?<code 339> (__SPI1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00002a          0x4 LONG 0x153a DEFINED (__U1RXInterrupt)?<code 339> (__U1RXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00002c          0x4 LONG 0x153a DEFINED (__U1TXInterrupt)?<code 339> (__U1TXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x153a DEFINED (__ADC1Interrupt)?<code 339> (__ADC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000030          0x4 LONG 0x153a DEFINED (__Interrupt14)?<code 339> (__Interrupt14):<code 339> (__DefaultInterrupt)
+                  0x000032          0x4 LONG 0x153a DEFINED (__NVMWriteInterrupt)?<code 339> (__NVMWriteInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000034          0x4 LONG 0x153a DEFINED (__SI2C1Interrupt)?<code 339> (__SI2C1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000036          0x4 LONG 0x153a DEFINED (__MI2C1Interrupt)?<code 339> (__MI2C1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000038          0x4 LONG 0x153a DEFINED (__CompInterrupt)?<code 339> (__CompInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00003a          0x4 LONG 0x153a DEFINED (__CNInterrupt)?<code 339> (__CNInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00003c          0x4 LONG 0x153a DEFINED (__INT1Interrupt)?<code 339> (__INT1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00003e          0x4 LONG 0x153a DEFINED (__Interrupt21)?<code 339> (__Interrupt21):<code 339> (__DefaultInterrupt)
+                  0x000040          0x4 LONG 0x153a DEFINED (__Interrupt22)?<code 339> (__Interrupt22):<code 339> (__DefaultInterrupt)
+                  0x000042          0x4 LONG 0x153a DEFINED (__Interrupt23)?<code 339> (__Interrupt23):<code 339> (__DefaultInterrupt)
+                  0x000044          0x4 LONG 0x153a DEFINED (__Interrupt24)?<code 339> (__Interrupt24):<code 339> (__DefaultInterrupt)
+                  0x000046          0x4 LONG 0x153a DEFINED (__Interrupt25)?<code 339> (__Interrupt25):<code 339> (__DefaultInterrupt)
+                  0x000048          0x4 LONG 0x153a DEFINED (__Interrupt26)?<code 339> (__Interrupt26):<code 339> (__DefaultInterrupt)
+                  0x00004a          0x4 LONG 0x153a DEFINED (__Interrupt27)?<code 339> (__Interrupt27):<code 339> (__DefaultInterrupt)
+                  0x00004c          0x4 LONG 0x153a DEFINED (__Interrupt28)?<code 339> (__Interrupt28):<code 339> (__DefaultInterrupt)
+                  0x00004e          0x4 LONG 0x153a DEFINED (__INT2Interrupt)?<code 339> (__INT2Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000050          0x4 LONG 0x153a DEFINED (__U2RXInterrupt)?<code 339> (__U2RXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000052          0x4 LONG 0x153a DEFINED (__U2TXInterrupt)?<code 339> (__U2TXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000054          0x4 LONG 0x153a DEFINED (__Interrupt32)?<code 339> (__Interrupt32):<code 339> (__DefaultInterrupt)
+                  0x000056          0x4 LONG 0x153a DEFINED (__Interrupt33)?<code 339> (__Interrupt33):<code 339> (__DefaultInterrupt)
+                  0x000058          0x4 LONG 0x153a DEFINED (__Interrupt34)?<code 339> (__Interrupt34):<code 339> (__DefaultInterrupt)
+                  0x00005a          0x4 LONG 0x153a DEFINED (__Interrupt35)?<code 339> (__Interrupt35):<code 339> (__DefaultInterrupt)
+                  0x00005c          0x4 LONG 0x153a DEFINED (__Interrupt36)?<code 339> (__Interrupt36):<code 339> (__DefaultInterrupt)
+                  0x00005e          0x4 LONG 0x153a DEFINED (__Interrupt37)?<code 339> (__Interrupt37):<code 339> (__DefaultInterrupt)
+                  0x000060          0x4 LONG 0x153a DEFINED (__Interrupt38)?<code 339> (__Interrupt38):<code 339> (__DefaultInterrupt)
+                  0x000062          0x4 LONG 0x153a DEFINED (__Interrupt39)?<code 339> (__Interrupt39):<code 339> (__DefaultInterrupt)
+                  0x000064          0x4 LONG 0x153a DEFINED (__Interrupt40)?<code 339> (__Interrupt40):<code 339> (__DefaultInterrupt)
+                  0x000066          0x4 LONG 0x153a DEFINED (__Interrupt41)?<code 339> (__Interrupt41):<code 339> (__DefaultInterrupt)
+                  0x000068          0x4 LONG 0x153a DEFINED (__Interrupt42)?<code 339> (__Interrupt42):<code 339> (__DefaultInterrupt)
+                  0x00006a          0x4 LONG 0x153a DEFINED (__Interrupt43)?<code 339> (__Interrupt43):<code 339> (__DefaultInterrupt)
+                  0x00006c          0x4 LONG 0x153a DEFINED (__Interrupt44)?<code 339> (__Interrupt44):<code 339> (__DefaultInterrupt)
+                  0x00006e          0x4 LONG 0x153a DEFINED (__Interrupt45)?<code 339> (__Interrupt45):<code 339> (__DefaultInterrupt)
+                  0x000070          0x4 LONG 0x153a DEFINED (__Interrupt46)?<code 339> (__Interrupt46):<code 339> (__DefaultInterrupt)
+                  0x000072          0x4 LONG 0x153a DEFINED (__Interrupt47)?<code 339> (__Interrupt47):<code 339> (__DefaultInterrupt)
+                  0x000074          0x4 LONG 0x153a DEFINED (__Interrupt48)?<code 339> (__Interrupt48):<code 339> (__DefaultInterrupt)
+                  0x000076          0x4 LONG 0x153a DEFINED (__Interrupt49)?<code 339> (__Interrupt49):<code 339> (__DefaultInterrupt)
+                  0x000078          0x4 LONG 0x153a DEFINED (__Interrupt50)?<code 339> (__Interrupt50):<code 339> (__DefaultInterrupt)
+                  0x00007a          0x4 LONG 0x153a DEFINED (__Interrupt51)?<code 339> (__Interrupt51):<code 339> (__DefaultInterrupt)
+                  0x00007c          0x4 LONG 0x153a DEFINED (__Interrupt52)?<code 339> (__Interrupt52):<code 339> (__DefaultInterrupt)
+                  0x00007e          0x4 LONG 0x153a DEFINED (__Interrupt53)?<code 339> (__Interrupt53):<code 339> (__DefaultInterrupt)
+                  0x000080          0x4 LONG 0x153a DEFINED (__Interrupt54)?<code 339> (__Interrupt54):<code 339> (__DefaultInterrupt)
+                  0x000082          0x4 LONG 0x153a DEFINED (__Interrupt55)?<code 339> (__Interrupt55):<code 339> (__DefaultInterrupt)
+                  0x000084          0x4 LONG 0x153a DEFINED (__Interrupt56)?<code 339> (__Interrupt56):<code 339> (__DefaultInterrupt)
+                  0x000086          0x4 LONG 0x153a DEFINED (__Interrupt57)?<code 339> (__Interrupt57):<code 339> (__DefaultInterrupt)
+                  0x000088          0x4 LONG 0x153a DEFINED (__Interrupt58)?<code 339> (__Interrupt58):<code 339> (__DefaultInterrupt)
+                  0x00008a          0x4 LONG 0x153a DEFINED (__Interrupt59)?<code 339> (__Interrupt59):<code 339> (__DefaultInterrupt)
+                  0x00008c          0x4 LONG 0x153a DEFINED (__Interrupt60)?<code 339> (__Interrupt60):<code 339> (__DefaultInterrupt)
+                  0x00008e          0x4 LONG 0x153a DEFINED (__Interrupt61)?<code 339> (__Interrupt61):<code 339> (__DefaultInterrupt)
+                  0x000090          0x4 LONG 0x153a DEFINED (__RTCCInterrupt)?<code 339> (__RTCCInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000092          0x4 LONG 0x153a DEFINED (__Interrupt63)?<code 339> (__Interrupt63):<code 339> (__DefaultInterrupt)
+                  0x000094          0x4 LONG 0x153a DEFINED (__Interrupt64)?<code 339> (__Interrupt64):<code 339> (__DefaultInterrupt)
+                  0x000096          0x4 LONG 0x153a DEFINED (__U1ErrInterrupt)?<code 339> (__U1ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000098          0x4 LONG 0x153a DEFINED (__U2ErrInterrupt)?<code 339> (__U2ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00009a          0x4 LONG 0x153a DEFINED (__CRCInterrupt)?<code 339> (__CRCInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00009c          0x4 LONG 0x153a DEFINED (__Interrupt68)?<code 339> (__Interrupt68):<code 339> (__DefaultInterrupt)
+                  0x00009e          0x4 LONG 0x153a DEFINED (__Interrupt69)?<code 339> (__Interrupt69):<code 339> (__DefaultInterrupt)
+                  0x0000a0          0x4 LONG 0x153a DEFINED (__Interrupt70)?<code 339> (__Interrupt70):<code 339> (__DefaultInterrupt)
+                  0x0000a2          0x4 LONG 0x153a DEFINED (__Interrupt71)?<code 339> (__Interrupt71):<code 339> (__DefaultInterrupt)
+                  0x0000a4          0x4 LONG 0x153a DEFINED (__HLVDInterrupt)?<code 339> (__HLVDInterrupt):<code 339> (__DefaultInterrupt)
+                  0x0000a6          0x4 LONG 0x153a DEFINED (__Interrupt73)?<code 339> (__Interrupt73):<code 339> (__DefaultInterrupt)
+                  0x0000a8          0x4 LONG 0x153a DEFINED (__Interrupt74)?<code 339> (__Interrupt74):<code 339> (__DefaultInterrupt)
+                  0x0000aa          0x4 LONG 0x153a DEFINED (__Interrupt75)?<code 339> (__Interrupt75):<code 339> (__DefaultInterrupt)
+                  0x0000ac          0x4 LONG 0x153a DEFINED (__Interrupt76)?<code 339> (__Interrupt76):<code 339> (__DefaultInterrupt)
+                  0x0000ae          0x4 LONG 0x153a DEFINED (__CTMUInterrupt)?<code 339> (__CTMUInterrupt):<code 339> (__DefaultInterrupt)
+                  0x0000b0          0x4 LONG 0x153a DEFINED (__Interrupt78)?<code 339> (__Interrupt78):<code 339> (__DefaultInterrupt)
+                  0x0000b2          0x4 LONG 0x153a DEFINED (__Interrupt79)?<code 339> (__Interrupt79):<code 339> (__DefaultInterrupt)
+                  0x0000b4          0x4 LONG 0x153a DEFINED (__Interrupt80)?<code 339> (__Interrupt80):<code 339> (__DefaultInterrupt)
+                  0x0000b6          0x4 LONG 0x153a DEFINED (__Interrupt81)?<code 339> (__Interrupt81):<code 339> (__DefaultInterrupt)
+                  0x0000b8          0x4 LONG 0x153a DEFINED (__Interrupt82)?<code 339> (__Interrupt82):<code 339> (__DefaultInterrupt)
+                  0x0000ba          0x4 LONG 0x153a DEFINED (__Interrupt83)?<code 339> (__Interrupt83):<code 339> (__DefaultInterrupt)
+                  0x0000bc          0x4 LONG 0x153a DEFINED (__Interrupt84)?<code 339> (__Interrupt84):<code 339> (__DefaultInterrupt)
+                  0x0000be          0x4 LONG 0x153a DEFINED (__Interrupt85)?<code 339> (__Interrupt85):<code 339> (__DefaultInterrupt)
+                  0x0000c0          0x4 LONG 0x153a DEFINED (__Interrupt86)?<code 339> (__Interrupt86):<code 339> (__DefaultInterrupt)
+                  0x0000c2          0x4 LONG 0x153a DEFINED (__Interrupt87)?<code 339> (__Interrupt87):<code 339> (__DefaultInterrupt)
+                  0x0000c4          0x4 LONG 0x153a DEFINED (__Interrupt88)?<code 339> (__Interrupt88):<code 339> (__DefaultInterrupt)
+                  0x0000c6          0x4 LONG 0x153a DEFINED (__Interrupt89)?<code 339> (__Interrupt89):<code 339> (__DefaultInterrupt)
+                  0x0000c8          0x4 LONG 0x153a DEFINED (__Interrupt90)?<code 339> (__Interrupt90):<code 339> (__DefaultInterrupt)
+                  0x0000ca          0x4 LONG 0x153a DEFINED (__Interrupt91)?<code 339> (__Interrupt91):<code 339> (__DefaultInterrupt)
+                  0x0000cc          0x4 LONG 0x153a DEFINED (__Interrupt92)?<code 339> (__Interrupt92):<code 339> (__DefaultInterrupt)
+                  0x0000ce          0x4 LONG 0x153a DEFINED (__Interrupt93)?<code 339> (__Interrupt93):<code 339> (__DefaultInterrupt)
+                  0x0000d0          0x4 LONG 0x153a DEFINED (__Interrupt94)?<code 339> (__Interrupt94):<code 339> (__DefaultInterrupt)
+                  0x0000d2          0x4 LONG 0x153a DEFINED (__Interrupt95)?<code 339> (__Interrupt95):<code 339> (__DefaultInterrupt)
+                  0x0000d4          0x4 LONG 0x153a DEFINED (__Interrupt96)?<code 339> (__Interrupt96):<code 339> (__DefaultInterrupt)
+                  0x0000d6          0x4 LONG 0x153a DEFINED (__Interrupt97)?<code 339> (__Interrupt97):<code 339> (__DefaultInterrupt)
+                  0x0000d8          0x4 LONG 0x153a DEFINED (__Interrupt98)?<code 339> (__Interrupt98):<code 339> (__DefaultInterrupt)
+                  0x0000da          0x4 LONG 0x153a DEFINED (__Interrupt99)?<code 339> (__Interrupt99):<code 339> (__DefaultInterrupt)
+                  0x0000dc          0x4 LONG 0x153a DEFINED (__Interrupt100)?<code 339> (__Interrupt100):<code 339> (__DefaultInterrupt)
+                  0x0000de          0x4 LONG 0x153a DEFINED (__Interrupt101)?<code 339> (__Interrupt101):<code 339> (__DefaultInterrupt)
+                  0x0000e0          0x4 LONG 0x153a DEFINED (__Interrupt102)?<code 339> (__Interrupt102):<code 339> (__DefaultInterrupt)
+                  0x0000e2          0x4 LONG 0x153a DEFINED (__Interrupt103)?<code 339> (__Interrupt103):<code 339> (__DefaultInterrupt)
+                  0x0000e4          0x4 LONG 0x153a DEFINED (__Interrupt104)?<code 339> (__Interrupt104):<code 339> (__DefaultInterrupt)
+                  0x0000e6          0x4 LONG 0x153a DEFINED (__Interrupt105)?<code 339> (__Interrupt105):<code 339> (__DefaultInterrupt)
+                  0x0000e8          0x4 LONG 0x153a DEFINED (__Interrupt106)?<code 339> (__Interrupt106):<code 339> (__DefaultInterrupt)
+                  0x0000ea          0x4 LONG 0x153a DEFINED (__Interrupt107)?<code 339> (__Interrupt107):<code 339> (__DefaultInterrupt)
+                  0x0000ec          0x4 LONG 0x153a DEFINED (__Interrupt108)?<code 339> (__Interrupt108):<code 339> (__DefaultInterrupt)
+                  0x0000ee          0x4 LONG 0x153a DEFINED (__Interrupt109)?<code 339> (__Interrupt109):<code 339> (__DefaultInterrupt)
+                  0x0000f0          0x4 LONG 0x153a DEFINED (__Interrupt110)?<code 339> (__Interrupt110):<code 339> (__DefaultInterrupt)
+                  0x0000f2          0x4 LONG 0x153a DEFINED (__Interrupt111)?<code 339> (__Interrupt111):<code 339> (__DefaultInterrupt)
+                  0x0000f4          0x4 LONG 0x153a DEFINED (__Interrupt112)?<code 339> (__Interrupt112):<code 339> (__DefaultInterrupt)
+                  0x0000f6          0x4 LONG 0x153a DEFINED (__Interrupt113)?<code 339> (__Interrupt113):<code 339> (__DefaultInterrupt)
+                  0x0000f8          0x4 LONG 0x153a DEFINED (__Interrupt114)?<code 339> (__Interrupt114):<code 339> (__DefaultInterrupt)
+                  0x0000fa          0x4 LONG 0x153a DEFINED (__Interrupt115)?<code 339> (__Interrupt115):<code 339> (__DefaultInterrupt)
+                  0x0000fc          0x4 LONG 0x153a DEFINED (__Interrupt116)?<code 339> (__Interrupt116):<code 339> (__DefaultInterrupt)
+                  0x0000fe          0x4 LONG 0x153a DEFINED (__Interrupt117)?<code 339> (__Interrupt117):<code 339> (__DefaultInterrupt)
+
+.aivt             0x000104         0xfc
+                  0x000104          0x4 LONG 0x153a DEFINED (__AltReservedTrap0)?<code 339> (__AltReservedTrap0):DEFINED (__ReservedTrap0)?<code 339> (__ReservedTrap0):<code 339> (__DefaultInterrupt)
+                  0x000106          0x4 LONG 0x153a DEFINED (__AltOscillatorFail)?<code 339> (__AltOscillatorFail):DEFINED (__OscillatorFail)?<code 339> (__OscillatorFail):<code 339> (__DefaultInterrupt)
+                  0x000108          0x4 LONG 0x153a DEFINED (__AltAddressError)?<code 339> (__AltAddressError):DEFINED (__AddressError)?<code 339> (__AddressError):<code 339> (__DefaultInterrupt)
+                  0x00010a          0x4 LONG 0x153a DEFINED (__AltStackError)?<code 339> (__AltStackError):DEFINED (__StackError)?<code 339> (__StackError):<code 339> (__DefaultInterrupt)
+                  0x00010c          0x4 LONG 0x153a DEFINED (__AltMathError)?<code 339> (__AltMathError):DEFINED (__MathError)?<code 339> (__MathError):<code 339> (__DefaultInterrupt)
+                  0x00010e          0x4 LONG 0x153a DEFINED (__AltReservedTrap5)?<code 339> (__AltReservedTrap5):DEFINED (__ReservedTrap5)?<code 339> (__ReservedTrap5):<code 339> (__DefaultInterrupt)
+                  0x000110          0x4 LONG 0x153a DEFINED (__AltReservedTrap6)?<code 339> (__AltReservedTrap6):DEFINED (__ReservedTrap6)?<code 339> (__ReservedTrap6):<code 339> (__DefaultInterrupt)
+                  0x000112          0x4 LONG 0x153a DEFINED (__AltReservedTrap7)?<code 339> (__AltReservedTrap7):DEFINED (__ReservedTrap7)?<code 339> (__ReservedTrap7):<code 339> (__DefaultInterrupt)
+                  0x000114          0x4 LONG 0x153a DEFINED (__AltINT0Interrupt)?<code 339> (__AltINT0Interrupt):DEFINED (__INT0Interrupt)?<code 339> (__INT0Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000116          0x4 LONG 0x153a DEFINED (__AltIC1Interrupt)?<code 339> (__AltIC1Interrupt):DEFINED (__IC1Interrupt)?<code 339> (__IC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000118          0x4 LONG 0x153a DEFINED (__AltOC1Interrupt)?<code 339> (__AltOC1Interrupt):DEFINED (__OC1Interrupt)?<code 339> (__OC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00011a          0x4 LONG 0x153a DEFINED (__AltT1Interrupt)?<code 339> (__AltT1Interrupt):DEFINED (__T1Interrupt)?<code 339> (__T1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00011c          0x4 LONG 0x153a DEFINED (__AltInterrupt4)?<code 339> (__AltInterrupt4):DEFINED (__Interrupt4)?<code 339> (__Interrupt4):<code 339> (__DefaultInterrupt)
+                  0x00011e          0x4 LONG 0x153a DEFINED (__AltInterrupt5)?<code 339> (__AltInterrupt5):DEFINED (__Interrupt5)?<code 339> (__Interrupt5):<code 339> (__DefaultInterrupt)
+                  0x000120          0x4 LONG 0x153a DEFINED (__AltInterrupt6)?<code 339> (__AltInterrupt6):DEFINED (__Interrupt6)?<code 339> (__Interrupt6):<code 339> (__DefaultInterrupt)
+                  0x000122          0x4 LONG 0x153a DEFINED (__AltT2Interrupt)?<code 339> (__AltT2Interrupt):DEFINED (__T2Interrupt)?<code 339> (__T2Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000124          0x4 LONG 0x153a DEFINED (__AltT3Interrupt)?<code 339> (__AltT3Interrupt):DEFINED (__T3Interrupt)?<code 339> (__T3Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000126          0x4 LONG 0x153a DEFINED (__AltSPI1ErrInterrupt)?<code 339> (__AltSPI1ErrInterrupt):DEFINED (__SPI1ErrInterrupt)?<code 339> (__SPI1ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000128          0x4 LONG 0x153a DEFINED (__AltSPI1Interrupt)?<code 339> (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?<code 339> (__SPI1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00012a          0x4 LONG 0x153a DEFINED (__AltU1RXInterrupt)?<code 339> (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?<code 339> (__U1RXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00012c          0x4 LONG 0x153a DEFINED (__AltU1TXInterrupt)?<code 339> (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?<code 339> (__U1TXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00012e          0x4 LONG 0x153a DEFINED (__AltADC1Interrupt)?<code 339> (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?<code 339> (__ADC1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000130          0x4 LONG 0x153a DEFINED (__AltInterrupt14)?<code 339> (__AltInterrupt14):DEFINED (__Interrupt14)?<code 339> (__Interrupt14):<code 339> (__DefaultInterrupt)
+                  0x000132          0x4 LONG 0x153a DEFINED (__AltNVMWriteInterrupt)?<code 339> (__AltNVMWriteInterrupt):DEFINED (__NVMWriteInterrupt)?<code 339> (__NVMWriteInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000134          0x4 LONG 0x153a DEFINED (__AltSI2C1Interrupt)?<code 339> (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?<code 339> (__SI2C1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000136          0x4 LONG 0x153a DEFINED (__AltMI2C1Interrupt)?<code 339> (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?<code 339> (__MI2C1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000138          0x4 LONG 0x153a DEFINED (__AltCompInterrupt)?<code 339> (__AltCompInterrupt):DEFINED (__CompInterrupt)?<code 339> (__CompInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00013a          0x4 LONG 0x153a DEFINED (__AltCNInterrupt)?<code 339> (__AltCNInterrupt):DEFINED (__CNInterrupt)?<code 339> (__CNInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00013c          0x4 LONG 0x153a DEFINED (__AltINT1Interrupt)?<code 339> (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?<code 339> (__INT1Interrupt):<code 339> (__DefaultInterrupt)
+                  0x00013e          0x4 LONG 0x153a DEFINED (__AltInterrupt21)?<code 339> (__AltInterrupt21):DEFINED (__Interrupt21)?<code 339> (__Interrupt21):<code 339> (__DefaultInterrupt)
+                  0x000140          0x4 LONG 0x153a DEFINED (__AltInterrupt22)?<code 339> (__AltInterrupt22):DEFINED (__Interrupt22)?<code 339> (__Interrupt22):<code 339> (__DefaultInterrupt)
+                  0x000142          0x4 LONG 0x153a DEFINED (__AltInterrupt23)?<code 339> (__AltInterrupt23):DEFINED (__Interrupt23)?<code 339> (__Interrupt23):<code 339> (__DefaultInterrupt)
+                  0x000144          0x4 LONG 0x153a DEFINED (__AltInterrupt24)?<code 339> (__AltInterrupt24):DEFINED (__Interrupt24)?<code 339> (__Interrupt24):<code 339> (__DefaultInterrupt)
+                  0x000146          0x4 LONG 0x153a DEFINED (__AltInterrupt25)?<code 339> (__AltInterrupt25):DEFINED (__Interrupt25)?<code 339> (__Interrupt25):<code 339> (__DefaultInterrupt)
+                  0x000148          0x4 LONG 0x153a DEFINED (__AltInterrupt26)?<code 339> (__AltInterrupt26):DEFINED (__Interrupt26)?<code 339> (__Interrupt26):<code 339> (__DefaultInterrupt)
+                  0x00014a          0x4 LONG 0x153a DEFINED (__AltInterrupt27)?<code 339> (__AltInterrupt27):DEFINED (__Interrupt27)?<code 339> (__Interrupt27):<code 339> (__DefaultInterrupt)
+                  0x00014c          0x4 LONG 0x153a DEFINED (__AltInterrupt28)?<code 339> (__AltInterrupt28):DEFINED (__Interrupt28)?<code 339> (__Interrupt28):<code 339> (__DefaultInterrupt)
+                  0x00014e          0x4 LONG 0x153a DEFINED (__AltINT2Interrupt)?<code 339> (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?<code 339> (__INT2Interrupt):<code 339> (__DefaultInterrupt)
+                  0x000150          0x4 LONG 0x153a DEFINED (__AltU2RXInterrupt)?<code 339> (__AltU2RXInterrupt):DEFINED (__U2RXInterrupt)?<code 339> (__U2RXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000152          0x4 LONG 0x153a DEFINED (__AltU2TXInterrupt)?<code 339> (__AltU2TXInterrupt):DEFINED (__U2TXInterrupt)?<code 339> (__U2TXInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000154          0x4 LONG 0x153a DEFINED (__AltInterrupt32)?<code 339> (__AltInterrupt32):DEFINED (__Interrupt32)?<code 339> (__Interrupt32):<code 339> (__DefaultInterrupt)
+                  0x000156          0x4 LONG 0x153a DEFINED (__AltInterrupt33)?<code 339> (__AltInterrupt33):DEFINED (__Interrupt33)?<code 339> (__Interrupt33):<code 339> (__DefaultInterrupt)
+                  0x000158          0x4 LONG 0x153a DEFINED (__AltInterrupt34)?<code 339> (__AltInterrupt34):DEFINED (__Interrupt34)?<code 339> (__Interrupt34):<code 339> (__DefaultInterrupt)
+                  0x00015a          0x4 LONG 0x153a DEFINED (__AltInterrupt35)?<code 339> (__AltInterrupt35):DEFINED (__Interrupt35)?<code 339> (__Interrupt35):<code 339> (__DefaultInterrupt)
+                  0x00015c          0x4 LONG 0x153a DEFINED (__AltInterrupt36)?<code 339> (__AltInterrupt36):DEFINED (__Interrupt36)?<code 339> (__Interrupt36):<code 339> (__DefaultInterrupt)
+                  0x00015e          0x4 LONG 0x153a DEFINED (__AltInterrupt37)?<code 339> (__AltInterrupt37):DEFINED (__Interrupt37)?<code 339> (__Interrupt37):<code 339> (__DefaultInterrupt)
+                  0x000160          0x4 LONG 0x153a DEFINED (__AltInterrupt38)?<code 339> (__AltInterrupt38):DEFINED (__Interrupt38)?<code 339> (__Interrupt38):<code 339> (__DefaultInterrupt)
+                  0x000162          0x4 LONG 0x153a DEFINED (__AltInterrupt39)?<code 339> (__AltInterrupt39):DEFINED (__Interrupt39)?<code 339> (__Interrupt39):<code 339> (__DefaultInterrupt)
+                  0x000164          0x4 LONG 0x153a DEFINED (__AltInterrupt40)?<code 339> (__AltInterrupt40):DEFINED (__Interrupt40)?<code 339> (__Interrupt40):<code 339> (__DefaultInterrupt)
+                  0x000166          0x4 LONG 0x153a DEFINED (__AltInterrupt41)?<code 339> (__AltInterrupt41):DEFINED (__Interrupt41)?<code 339> (__Interrupt41):<code 339> (__DefaultInterrupt)
+                  0x000168          0x4 LONG 0x153a DEFINED (__AltInterrupt42)?<code 339> (__AltInterrupt42):DEFINED (__Interrupt42)?<code 339> (__Interrupt42):<code 339> (__DefaultInterrupt)
+                  0x00016a          0x4 LONG 0x153a DEFINED (__AltInterrupt43)?<code 339> (__AltInterrupt43):DEFINED (__Interrupt43)?<code 339> (__Interrupt43):<code 339> (__DefaultInterrupt)
+                  0x00016c          0x4 LONG 0x153a DEFINED (__AltInterrupt44)?<code 339> (__AltInterrupt44):DEFINED (__Interrupt44)?<code 339> (__Interrupt44):<code 339> (__DefaultInterrupt)
+                  0x00016e          0x4 LONG 0x153a DEFINED (__AltInterrupt45)?<code 339> (__AltInterrupt45):DEFINED (__Interrupt45)?<code 339> (__Interrupt45):<code 339> (__DefaultInterrupt)
+                  0x000170          0x4 LONG 0x153a DEFINED (__AltInterrupt46)?<code 339> (__AltInterrupt46):DEFINED (__Interrupt46)?<code 339> (__Interrupt46):<code 339> (__DefaultInterrupt)
+                  0x000172          0x4 LONG 0x153a DEFINED (__AltInterrupt47)?<code 339> (__AltInterrupt47):DEFINED (__Interrupt47)?<code 339> (__Interrupt47):<code 339> (__DefaultInterrupt)
+                  0x000174          0x4 LONG 0x153a DEFINED (__AltInterrupt48)?<code 339> (__AltInterrupt48):DEFINED (__Interrupt48)?<code 339> (__Interrupt48):<code 339> (__DefaultInterrupt)
+                  0x000176          0x4 LONG 0x153a DEFINED (__AltInterrupt49)?<code 339> (__AltInterrupt49):DEFINED (__Interrupt49)?<code 339> (__Interrupt49):<code 339> (__DefaultInterrupt)
+                  0x000178          0x4 LONG 0x153a DEFINED (__AltInterrupt50)?<code 339> (__AltInterrupt50):DEFINED (__Interrupt50)?<code 339> (__Interrupt50):<code 339> (__DefaultInterrupt)
+                  0x00017a          0x4 LONG 0x153a DEFINED (__AltInterrupt51)?<code 339> (__AltInterrupt51):DEFINED (__Interrupt51)?<code 339> (__Interrupt51):<code 339> (__DefaultInterrupt)
+                  0x00017c          0x4 LONG 0x153a DEFINED (__AltInterrupt52)?<code 339> (__AltInterrupt52):DEFINED (__Interrupt52)?<code 339> (__Interrupt52):<code 339> (__DefaultInterrupt)
+                  0x00017e          0x4 LONG 0x153a DEFINED (__AltInterrupt53)?<code 339> (__AltInterrupt53):DEFINED (__Interrupt53)?<code 339> (__Interrupt53):<code 339> (__DefaultInterrupt)
+                  0x000180          0x4 LONG 0x153a DEFINED (__AltInterrupt54)?<code 339> (__AltInterrupt54):DEFINED (__Interrupt54)?<code 339> (__Interrupt54):<code 339> (__DefaultInterrupt)
+                  0x000182          0x4 LONG 0x153a DEFINED (__AltInterrupt55)?<code 339> (__AltInterrupt55):DEFINED (__Interrupt55)?<code 339> (__Interrupt55):<code 339> (__DefaultInterrupt)
+                  0x000184          0x4 LONG 0x153a DEFINED (__AltInterrupt56)?<code 339> (__AltInterrupt56):DEFINED (__Interrupt56)?<code 339> (__Interrupt56):<code 339> (__DefaultInterrupt)
+                  0x000186          0x4 LONG 0x153a DEFINED (__AltInterrupt57)?<code 339> (__AltInterrupt57):DEFINED (__Interrupt57)?<code 339> (__Interrupt57):<code 339> (__DefaultInterrupt)
+                  0x000188          0x4 LONG 0x153a DEFINED (__AltInterrupt58)?<code 339> (__AltInterrupt58):DEFINED (__Interrupt58)?<code 339> (__Interrupt58):<code 339> (__DefaultInterrupt)
+                  0x00018a          0x4 LONG 0x153a DEFINED (__AltInterrupt59)?<code 339> (__AltInterrupt59):DEFINED (__Interrupt59)?<code 339> (__Interrupt59):<code 339> (__DefaultInterrupt)
+                  0x00018c          0x4 LONG 0x153a DEFINED (__AltInterrupt60)?<code 339> (__AltInterrupt60):DEFINED (__Interrupt60)?<code 339> (__Interrupt60):<code 339> (__DefaultInterrupt)
+                  0x00018e          0x4 LONG 0x153a DEFINED (__AltInterrupt61)?<code 339> (__AltInterrupt61):DEFINED (__Interrupt61)?<code 339> (__Interrupt61):<code 339> (__DefaultInterrupt)
+                  0x000190          0x4 LONG 0x153a DEFINED (__AltRTCCInterrupt)?<code 339> (__AltRTCCInterrupt):DEFINED (__RTCCInterrupt)?<code 339> (__RTCCInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000192          0x4 LONG 0x153a DEFINED (__AltInterrupt63)?<code 339> (__AltInterrupt63):DEFINED (__Interrupt63)?<code 339> (__Interrupt63):<code 339> (__DefaultInterrupt)
+                  0x000194          0x4 LONG 0x153a DEFINED (__AltInterrupt64)?<code 339> (__AltInterrupt64):DEFINED (__Interrupt64)?<code 339> (__Interrupt64):<code 339> (__DefaultInterrupt)
+                  0x000196          0x4 LONG 0x153a DEFINED (__AltU1ErrInterrupt)?<code 339> (__AltU1ErrInterrupt):DEFINED (__U1ErrInterrupt)?<code 339> (__U1ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x000198          0x4 LONG 0x153a DEFINED (__AltU2ErrInterrupt)?<code 339> (__AltU2ErrInterrupt):DEFINED (__U2ErrInterrupt)?<code 339> (__U2ErrInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00019a          0x4 LONG 0x153a DEFINED (__AltCRCInterrupt)?<code 339> (__AltCRCInterrupt):DEFINED (__CRCInterrupt)?<code 339> (__CRCInterrupt):<code 339> (__DefaultInterrupt)
+                  0x00019c          0x4 LONG 0x153a DEFINED (__AltInterrupt68)?<code 339> (__AltInterrupt68):DEFINED (__Interrupt68)?<code 339> (__Interrupt68):<code 339> (__DefaultInterrupt)
+                  0x00019e          0x4 LONG 0x153a DEFINED (__AltInterrupt69)?<code 339> (__AltInterrupt69):DEFINED (__Interrupt69)?<code 339> (__Interrupt69):<code 339> (__DefaultInterrupt)
+                  0x0001a0          0x4 LONG 0x153a DEFINED (__AltInterrupt70)?<code 339> (__AltInterrupt70):DEFINED (__Interrupt70)?<code 339> (__Interrupt70):<code 339> (__DefaultInterrupt)
+                  0x0001a2          0x4 LONG 0x153a DEFINED (__AltInterrupt71)?<code 339> (__AltInterrupt71):DEFINED (__Interrupt71)?<code 339> (__Interrupt71):<code 339> (__DefaultInterrupt)
+                  0x0001a4          0x4 LONG 0x153a DEFINED (__AltHLVDInterrupt)?<code 339> (__AltHLVDInterrupt):DEFINED (__HLVDInterrupt)?<code 339> (__HLVDInterrupt):<code 339> (__DefaultInterrupt)
+                  0x0001a6          0x4 LONG 0x153a DEFINED (__AltInterrupt73)?<code 339> (__AltInterrupt73):DEFINED (__Interrupt73)?<code 339> (__Interrupt73):<code 339> (__DefaultInterrupt)
+                  0x0001a8          0x4 LONG 0x153a DEFINED (__AltInterrupt74)?<code 339> (__AltInterrupt74):DEFINED (__Interrupt74)?<code 339> (__Interrupt74):<code 339> (__DefaultInterrupt)
+                  0x0001aa          0x4 LONG 0x153a DEFINED (__AltInterrupt75)?<code 339> (__AltInterrupt75):DEFINED (__Interrupt75)?<code 339> (__Interrupt75):<code 339> (__DefaultInterrupt)
+                  0x0001ac          0x4 LONG 0x153a DEFINED (__AltInterrupt76)?<code 339> (__AltInterrupt76):DEFINED (__Interrupt76)?<code 339> (__Interrupt76):<code 339> (__DefaultInterrupt)
+                  0x0001ae          0x4 LONG 0x153a DEFINED (__AltCTMUInterrupt)?<code 339> (__AltCTMUInterrupt):DEFINED (__CTMUInterrupt)?<code 339> (__CTMUInterrupt):<code 339> (__DefaultInterrupt)
+                  0x0001b0          0x4 LONG 0x153a DEFINED (__AltInterrupt78)?<code 339> (__AltInterrupt78):DEFINED (__Interrupt78)?<code 339> (__Interrupt78):<code 339> (__DefaultInterrupt)
+                  0x0001b2          0x4 LONG 0x153a DEFINED (__AltInterrupt79)?<code 339> (__AltInterrupt79):DEFINED (__Interrupt79)?<code 339> (__Interrupt79):<code 339> (__DefaultInterrupt)
+                  0x0001b4          0x4 LONG 0x153a DEFINED (__AltInterrupt80)?<code 339> (__AltInterrupt80):DEFINED (__Interrupt80)?<code 339> (__Interrupt80):<code 339> (__DefaultInterrupt)
+                  0x0001b6          0x4 LONG 0x153a DEFINED (__AltInterrupt81)?<code 339> (__AltInterrupt81):DEFINED (__Interrupt81)?<code 339> (__Interrupt81):<code 339> (__DefaultInterrupt)
+                  0x0001b8          0x4 LONG 0x153a DEFINED (__AltInterrupt82)?<code 339> (__AltInterrupt82):DEFINED (__Interrupt82)?<code 339> (__Interrupt82):<code 339> (__DefaultInterrupt)
+                  0x0001ba          0x4 LONG 0x153a DEFINED (__AltInterrupt83)?<code 339> (__AltInterrupt83):DEFINED (__Interrupt83)?<code 339> (__Interrupt83):<code 339> (__DefaultInterrupt)
+                  0x0001bc          0x4 LONG 0x153a DEFINED (__AltInterrupt84)?<code 339> (__AltInterrupt84):DEFINED (__Interrupt84)?<code 339> (__Interrupt84):<code 339> (__DefaultInterrupt)
+                  0x0001be          0x4 LONG 0x153a DEFINED (__AltInterrupt85)?<code 339> (__AltInterrupt85):DEFINED (__Interrupt85)?<code 339> (__Interrupt85):<code 339> (__DefaultInterrupt)
+                  0x0001c0          0x4 LONG 0x153a DEFINED (__AltInterrupt86)?<code 339> (__AltInterrupt86):DEFINED (__Interrupt86)?<code 339> (__Interrupt86):<code 339> (__DefaultInterrupt)
+                  0x0001c2          0x4 LONG 0x153a DEFINED (__AltInterrupt87)?<code 339> (__AltInterrupt87):DEFINED (__Interrupt87)?<code 339> (__Interrupt87):<code 339> (__DefaultInterrupt)
+                  0x0001c4          0x4 LONG 0x153a DEFINED (__AltInterrupt88)?<code 339> (__AltInterrupt88):DEFINED (__Interrupt88)?<code 339> (__Interrupt88):<code 339> (__DefaultInterrupt)
+                  0x0001c6          0x4 LONG 0x153a DEFINED (__AltInterrupt89)?<code 339> (__AltInterrupt89):DEFINED (__Interrupt89)?<code 339> (__Interrupt89):<code 339> (__DefaultInterrupt)
+                  0x0001c8          0x4 LONG 0x153a DEFINED (__AltInterrupt90)?<code 339> (__AltInterrupt90):DEFINED (__Interrupt90)?<code 339> (__Interrupt90):<code 339> (__DefaultInterrupt)
+                  0x0001ca          0x4 LONG 0x153a DEFINED (__AltInterrupt91)?<code 339> (__AltInterrupt91):DEFINED (__Interrupt91)?<code 339> (__Interrupt91):<code 339> (__DefaultInterrupt)
+                  0x0001cc          0x4 LONG 0x153a DEFINED (__AltInterrupt92)?<code 339> (__AltInterrupt92):DEFINED (__Interrupt92)?<code 339> (__Interrupt92):<code 339> (__DefaultInterrupt)
+                  0x0001ce          0x4 LONG 0x153a DEFINED (__AltInterrupt93)?<code 339> (__AltInterrupt93):DEFINED (__Interrupt93)?<code 339> (__Interrupt93):<code 339> (__DefaultInterrupt)
+                  0x0001d0          0x4 LONG 0x153a DEFINED (__AltInterrupt94)?<code 339> (__AltInterrupt94):DEFINED (__Interrupt94)?<code 339> (__Interrupt94):<code 339> (__DefaultInterrupt)
+                  0x0001d2          0x4 LONG 0x153a DEFINED (__AltInterrupt95)?<code 339> (__AltInterrupt95):DEFINED (__Interrupt95)?<code 339> (__Interrupt95):<code 339> (__DefaultInterrupt)
+                  0x0001d4          0x4 LONG 0x153a DEFINED (__AltInterrupt96)?<code 339> (__AltInterrupt96):DEFINED (__Interrupt96)?<code 339> (__Interrupt96):<code 339> (__DefaultInterrupt)
+                  0x0001d6          0x4 LONG 0x153a DEFINED (__AltInterrupt97)?<code 339> (__AltInterrupt97):DEFINED (__Interrupt97)?<code 339> (__Interrupt97):<code 339> (__DefaultInterrupt)
+                  0x0001d8          0x4 LONG 0x153a DEFINED (__AltInterrupt98)?<code 339> (__AltInterrupt98):DEFINED (__Interrupt98)?<code 339> (__Interrupt98):<code 339> (__DefaultInterrupt)
+                  0x0001da          0x4 LONG 0x153a DEFINED (__AltInterrupt99)?<code 339> (__AltInterrupt99):DEFINED (__Interrupt99)?<code 339> (__Interrupt99):<code 339> (__DefaultInterrupt)
+                  0x0001dc          0x4 LONG 0x153a DEFINED (__AltInterrupt100)?<code 339> (__AltInterrupt100):DEFINED (__Interrupt100)?<code 339> (__Interrupt100):<code 339> (__DefaultInterrupt)
+                  0x0001de          0x4 LONG 0x153a DEFINED (__AltInterrupt101)?<code 339> (__AltInterrupt101):DEFINED (__Interrupt101)?<code 339> (__Interrupt101):<code 339> (__DefaultInterrupt)
+                  0x0001e0          0x4 LONG 0x153a DEFINED (__AltInterrupt102)?<code 339> (__AltInterrupt102):DEFINED (__Interrupt102)?<code 339> (__Interrupt102):<code 339> (__DefaultInterrupt)
+                  0x0001e2          0x4 LONG 0x153a DEFINED (__AltInterrupt103)?<code 339> (__AltInterrupt103):DEFINED (__Interrupt103)?<code 339> (__Interrupt103):<code 339> (__DefaultInterrupt)
+                  0x0001e4          0x4 LONG 0x153a DEFINED (__AltInterrupt104)?<code 339> (__AltInterrupt104):DEFINED (__Interrupt104)?<code 339> (__Interrupt104):<code 339> (__DefaultInterrupt)
+                  0x0001e6          0x4 LONG 0x153a DEFINED (__AltInterrupt105)?<code 339> (__AltInterrupt105):DEFINED (__Interrupt105)?<code 339> (__Interrupt105):<code 339> (__DefaultInterrupt)
+                  0x0001e8          0x4 LONG 0x153a DEFINED (__AltInterrupt106)?<code 339> (__AltInterrupt106):DEFINED (__Interrupt106)?<code 339> (__Interrupt106):<code 339> (__DefaultInterrupt)
+                  0x0001ea          0x4 LONG 0x153a DEFINED (__AltInterrupt107)?<code 339> (__AltInterrupt107):DEFINED (__Interrupt107)?<code 339> (__Interrupt107):<code 339> (__DefaultInterrupt)
+                  0x0001ec          0x4 LONG 0x153a DEFINED (__AltInterrupt108)?<code 339> (__AltInterrupt108):DEFINED (__Interrupt108)?<code 339> (__Interrupt108):<code 339> (__DefaultInterrupt)
+                  0x0001ee          0x4 LONG 0x153a DEFINED (__AltInterrupt109)?<code 339> (__AltInterrupt109):DEFINED (__Interrupt109)?<code 339> (__Interrupt109):<code 339> (__DefaultInterrupt)
+                  0x0001f0          0x4 LONG 0x153a DEFINED (__AltInterrupt110)?<code 339> (__AltInterrupt110):DEFINED (__Interrupt110)?<code 339> (__Interrupt110):<code 339> (__DefaultInterrupt)
+                  0x0001f2          0x4 LONG 0x153a DEFINED (__AltInterrupt111)?<code 339> (__AltInterrupt111):DEFINED (__Interrupt111)?<code 339> (__Interrupt111):<code 339> (__DefaultInterrupt)
+                  0x0001f4          0x4 LONG 0x153a DEFINED (__AltInterrupt112)?<code 339> (__AltInterrupt112):DEFINED (__Interrupt112)?<code 339> (__Interrupt112):<code 339> (__DefaultInterrupt)
+                  0x0001f6          0x4 LONG 0x153a DEFINED (__AltInterrupt113)?<code 339> (__AltInterrupt113):DEFINED (__Interrupt113)?<code 339> (__Interrupt113):<code 339> (__DefaultInterrupt)
+                  0x0001f8          0x4 LONG 0x153a DEFINED (__AltInterrupt114)?<code 339> (__AltInterrupt114):DEFINED (__Interrupt114)?<code 339> (__Interrupt114):<code 339> (__DefaultInterrupt)
+                  0x0001fa          0x4 LONG 0x153a DEFINED (__AltInterrupt115)?<code 339> (__AltInterrupt115):DEFINED (__Interrupt115)?<code 339> (__Interrupt115):<code 339> (__DefaultInterrupt)
+                  0x0001fc          0x4 LONG 0x153a DEFINED (__AltInterrupt116)?<code 339> (__AltInterrupt116):DEFINED (__Interrupt116)?<code 339> (__Interrupt116):<code 339> (__DefaultInterrupt)
+                  0x0001fe          0x4 LONG 0x153a DEFINED (__AltInterrupt117)?<code 339> (__AltInterrupt117):DEFINED (__Interrupt117)?<code 339> (__Interrupt117):<code 339> (__DefaultInterrupt)
+                    0x0000                  WREG0 = 0x0
+                    0x0000                  _WREG0 = 0x0
+                    0x0002                  WREG1 = 0x2
+                    0x0002                  _WREG1 = 0x2
+                    0x0004                  WREG2 = 0x4
+                    0x0004                  _WREG2 = 0x4
+                    0x0006                  WREG3 = 0x6
+                    0x0006                  _WREG3 = 0x6
+                    0x0008                  WREG4 = 0x8
+                    0x0008                  _WREG4 = 0x8
+                    0x000a                  WREG5 = 0xa
+                    0x000a                  _WREG5 = 0xa
+                    0x000c                  WREG6 = 0xc
+                    0x000c                  _WREG6 = 0xc
+                    0x000e                  WREG7 = 0xe
+                    0x000e                  _WREG7 = 0xe
+                    0x0010                  WREG8 = 0x10
+                    0x0010                  _WREG8 = 0x10
+                    0x0012                  WREG9 = 0x12
+                    0x0012                  _WREG9 = 0x12
+                    0x0014                  WREG10 = 0x14
+                    0x0014                  _WREG10 = 0x14
+                    0x0016                  WREG11 = 0x16
+                    0x0016                  _WREG11 = 0x16
+                    0x0018                  WREG12 = 0x18
+                    0x0018                  _WREG12 = 0x18
+                    0x001a                  WREG13 = 0x1a
+                    0x001a                  _WREG13 = 0x1a
+                    0x001c                  WREG14 = 0x1c
+                    0x001c                  _WREG14 = 0x1c
+                    0x001e                  WREG15 = 0x1e
+                    0x001e                  _WREG15 = 0x1e
+                    0x0020                  SPLIM = 0x20
+                    0x0020                  _SPLIM = 0x20
+                    0x002e                  PCL = 0x2e
+                    0x002e                  _PCL = 0x2e
+                    0x0030                  PCH = 0x30
+                    0x0030                  _PCH = 0x30
+                    0x0032                  TBLPAG = 0x32
+                    0x0032                  _TBLPAG = 0x32
+                    0x0034                  PSVPAG = 0x34
+                    0x0034                  _PSVPAG = 0x34
+                    0x0036                  RCOUNT = 0x36
+                    0x0036                  _RCOUNT = 0x36
+                    0x0042                  SR = 0x42
+                    0x0042                  _SR = 0x42
+                    0x0042                  _SRbits = 0x42
+                    0x0044                  CORCON = 0x44
+                    0x0044                  _CORCON = 0x44
+                    0x0044                  _CORCONbits = 0x44
+                    0x0052                  DISICNT = 0x52
+                    0x0052                  _DISICNT = 0x52
+                    0x0060                  CNEN1 = 0x60
+                    0x0060                  _CNEN1 = 0x60
+                    0x0060                  _CNEN1bits = 0x60
+                    0x0062                  CNEN2 = 0x62
+                    0x0062                  _CNEN2 = 0x62
+                    0x0062                  _CNEN2bits = 0x62
+                    0x0068                  CNPU1 = 0x68
+                    0x0068                  _CNPU1 = 0x68
+                    0x0068                  _CNPU1bits = 0x68
+                    0x006a                  CNPU2 = 0x6a
+                    0x006a                  _CNPU2 = 0x6a
+                    0x006a                  _CNPU2bits = 0x6a
+                    0x0070                  CNPD1 = 0x70
+                    0x0070                  _CNPD1 = 0x70
+                    0x0070                  _CNPD1bits = 0x70
+                    0x0072                  CNPD2 = 0x72
+                    0x0072                  _CNPD2 = 0x72
+                    0x0072                  _CNPD2bits = 0x72
+                    0x0080                  INTCON1 = 0x80
+                    0x0080                  _INTCON1 = 0x80
+                    0x0080                  _INTCON1bits = 0x80
+                    0x0082                  INTCON2 = 0x82
+                    0x0082                  _INTCON2 = 0x82
+                    0x0082                  _INTCON2bits = 0x82
+                    0x0084                  IFS0 = 0x84
+                    0x0084                  _IFS0 = 0x84
+                    0x0084                  _IFS0bits = 0x84
+                    0x0086                  IFS1 = 0x86
+                    0x0086                  _IFS1 = 0x86
+                    0x0086                  _IFS1bits = 0x86
+                    0x008a                  IFS3 = 0x8a
+                    0x008a                  _IFS3 = 0x8a
+                    0x008a                  _IFS3bits = 0x8a
+                    0x008c                  IFS4 = 0x8c
+                    0x008c                  _IFS4 = 0x8c
+                    0x008c                  _IFS4bits = 0x8c
+                    0x0094                  IEC0 = 0x94
+                    0x0094                  _IEC0 = 0x94
+                    0x0094                  _IEC0bits = 0x94
+                    0x0096                  IEC1 = 0x96
+                    0x0096                  _IEC1 = 0x96
+                    0x0096                  _IEC1bits = 0x96
+                    0x009a                  IEC3 = 0x9a
+                    0x009a                  _IEC3 = 0x9a
+                    0x009a                  _IEC3bits = 0x9a
+                    0x009c                  IEC4 = 0x9c
+                    0x009c                  _IEC4 = 0x9c
+                    0x009c                  _IEC4bits = 0x9c
+                    0x00a4                  IPC0 = 0xa4
+                    0x00a4                  _IPC0 = 0xa4
+                    0x00a4                  _IPC0bits = 0xa4
+                    0x00a6                  IPC1 = 0xa6
+                    0x00a6                  _IPC1 = 0xa6
+                    0x00a6                  _IPC1bits = 0xa6
+                    0x00a8                  IPC2 = 0xa8
+                    0x00a8                  _IPC2 = 0xa8
+                    0x00a8                  _IPC2bits = 0xa8
+                    0x00aa                  IPC3 = 0xaa
+                    0x00aa                  _IPC3 = 0xaa
+                    0x00aa                  _IPC3bits = 0xaa
+                    0x00ac                  IPC4 = 0xac
+                    0x00ac                  _IPC4 = 0xac
+                    0x00ac                  _IPC4bits = 0xac
+                    0x00ae                  IPC5 = 0xae
+                    0x00ae                  _IPC5 = 0xae
+                    0x00ae                  _IPC5bits = 0xae
+                    0x00b2                  IPC7 = 0xb2
+                    0x00b2                  _IPC7 = 0xb2
+                    0x00b2                  _IPC7bits = 0xb2
+                    0x00c2                  IPC15 = 0xc2
+                    0x00c2                  _IPC15 = 0xc2
+                    0x00c2                  _IPC15bits = 0xc2
+                    0x00c4                  IPC16 = 0xc4
+                    0x00c4                  _IPC16 = 0xc4
+                    0x00c4                  _IPC16bits = 0xc4
+                    0x00c8                  IPC18 = 0xc8
+                    0x00c8                  _IPC18 = 0xc8
+                    0x00c8                  _IPC18bits = 0xc8
+                    0x00ca                  IPC19 = 0xca
+                    0x00ca                  _IPC19 = 0xca
+                    0x00ca                  _IPC19bits = 0xca
+                    0x00e0                  INTTREG = 0xe0
+                    0x00e0                  _INTTREG = 0xe0
+                    0x00e0                  _INTTREGbits = 0xe0
+                    0x0100                  TMR1 = 0x100
+                    0x0100                  _TMR1 = 0x100
+                    0x0102                  PR1 = 0x102
+                    0x0102                  _PR1 = 0x102
+                    0x0104                  T1CON = 0x104
+                    0x0104                  _T1CON = 0x104
+                    0x0104                  _T1CONbits = 0x104
+                    0x0106                  TMR2 = 0x106
+                    0x0106                  _TMR2 = 0x106
+                    0x0108                  TMR3HLD = 0x108
+                    0x0108                  _TMR3HLD = 0x108
+                    0x010a                  TMR3 = 0x10a
+                    0x010a                  _TMR3 = 0x10a
+                    0x010c                  PR2 = 0x10c
+                    0x010c                  _PR2 = 0x10c
+                    0x010e                  PR3 = 0x10e
+                    0x010e                  _PR3 = 0x10e
+                    0x0110                  T2CON = 0x110
+                    0x0110                  _T2CON = 0x110
+                    0x0110                  _T2CONbits = 0x110
+                    0x0112                  T3CON = 0x112
+                    0x0112                  _T3CON = 0x112
+                    0x0112                  _T3CONbits = 0x112
+                    0x0140                  IC1BUF = 0x140
+                    0x0140                  _IC1BUF = 0x140
+                    0x0142                  IC1CON = 0x142
+                    0x0142                  _IC1CON = 0x142
+                    0x0142                  _IC1CONbits = 0x142
+                    0x0180                  OC1RS = 0x180
+                    0x0180                  _OC1RS = 0x180
+                    0x0182                  OC1R = 0x182
+                    0x0182                  _OC1R = 0x182
+                    0x0184                  OC1CON = 0x184
+                    0x0184                  _OC1CON = 0x184
+                    0x0184                  _OC1CONbits = 0x184
+                    0x0200                  I2C1RCV = 0x200
+                    0x0200                  _I2C1RCV = 0x200
+                    0x0202                  I2C1TRN = 0x202
+                    0x0202                  _I2C1TRN = 0x202
+                    0x0204                  I2C1BRG = 0x204
+                    0x0204                  _I2C1BRG = 0x204
+                    0x0206                  I2C1CON = 0x206
+                    0x0206                  _I2C1CON = 0x206
+                    0x0206                  _I2C1CONbits = 0x206
+                    0x0208                  I2C1STAT = 0x208
+                    0x0208                  _I2C1STAT = 0x208
+                    0x0208                  _I2C1STATbits = 0x208
+                    0x020a                  I2C1ADD = 0x20a
+                    0x020a                  _I2C1ADD = 0x20a
+                    0x020c                  I2C1MSK = 0x20c
+                    0x020c                  _I2C1MSK = 0x20c
+                    0x0220                  U1MODE = 0x220
+                    0x0220                  _U1MODE = 0x220
+                    0x0220                  _U1MODEbits = 0x220
+                    0x0222                  U1STA = 0x222
+                    0x0222                  _U1STA = 0x222
+                    0x0222                  _U1STAbits = 0x222
+                    0x0224                  U1TXREG = 0x224
+                    0x0224                  _U1TXREG = 0x224
+                    0x0226                  U1RXREG = 0x226
+                    0x0226                  _U1RXREG = 0x226
+                    0x0228                  U1BRG = 0x228
+                    0x0228                  _U1BRG = 0x228
+                    0x0230                  U2MODE = 0x230
+                    0x0230                  _U2MODE = 0x230
+                    0x0230                  _U2MODEbits = 0x230
+                    0x0232                  U2STA = 0x232
+                    0x0232                  _U2STA = 0x232
+                    0x0232                  _U2STAbits = 0x232
+                    0x0234                  U2TXREG = 0x234
+                    0x0234                  _U2TXREG = 0x234
+                    0x0236                  U2RXREG = 0x236
+                    0x0236                  _U2RXREG = 0x236
+                    0x0238                  U2BRG = 0x238
+                    0x0238                  _U2BRG = 0x238
+                    0x0240                  SPI1STAT = 0x240
+                    0x0240                  _SPI1STAT = 0x240
+                    0x0240                  _SPI1STATbits = 0x240
+                    0x0242                  SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1bits = 0x242
+                    0x0244                  SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2bits = 0x244
+                    0x0248                  SPI1BUF = 0x248
+                    0x0248                  _SPI1BUF = 0x248
+                    0x02c0                  TRISA = 0x2c0
+                    0x02c0                  _TRISA = 0x2c0
+                    0x02c0                  _TRISAbits = 0x2c0
+                    0x02c2                  PORTA = 0x2c2
+                    0x02c2                  _PORTA = 0x2c2
+                    0x02c2                  _PORTAbits = 0x2c2
+                    0x02c4                  LATA = 0x2c4
+                    0x02c4                  _LATA = 0x2c4
+                    0x02c4                  _LATAbits = 0x2c4
+                    0x02c6                  ODCA = 0x2c6
+                    0x02c6                  _ODCA = 0x2c6
+                    0x02c6                  _ODCAbits = 0x2c6
+                    0x02c8                  TRISB = 0x2c8
+                    0x02c8                  _TRISB = 0x2c8
+                    0x02c8                  _TRISBbits = 0x2c8
+                    0x02ca                  PORTB = 0x2ca
+                    0x02ca                  _PORTB = 0x2ca
+                    0x02ca                  _PORTBbits = 0x2ca
+                    0x02cc                  LATB = 0x2cc
+                    0x02cc                  _LATB = 0x2cc
+                    0x02cc                  _LATBbits = 0x2cc
+                    0x02ce                  ODCB = 0x2ce
+                    0x02ce                  _ODCB = 0x2ce
+                    0x02ce                  _ODCBbits = 0x2ce
+                    0x02fc                  PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1bits = 0x2fc
+                    0x0300                  ADC1BUF0 = 0x300
+                    0x0300                  _ADC1BUF0 = 0x300
+                    0x0302                  ADC1BUF1 = 0x302
+                    0x0302                  _ADC1BUF1 = 0x302
+                    0x0304                  ADC1BUF2 = 0x304
+                    0x0304                  _ADC1BUF2 = 0x304
+                    0x0306                  ADC1BUF3 = 0x306
+                    0x0306                  _ADC1BUF3 = 0x306
+                    0x0308                  ADC1BUF4 = 0x308
+                    0x0308                  _ADC1BUF4 = 0x308
+                    0x030a                  ADC1BUF5 = 0x30a
+                    0x030a                  _ADC1BUF5 = 0x30a
+                    0x030c                  ADC1BUF6 = 0x30c
+                    0x030c                  _ADC1BUF6 = 0x30c
+                    0x030e                  ADC1BUF7 = 0x30e
+                    0x030e                  _ADC1BUF7 = 0x30e
+                    0x0310                  ADC1BUF8 = 0x310
+                    0x0310                  _ADC1BUF8 = 0x310
+                    0x0312                  ADC1BUF9 = 0x312
+                    0x0312                  _ADC1BUF9 = 0x312
+                    0x0314                  ADC1BUFA = 0x314
+                    0x0314                  _ADC1BUFA = 0x314
+                    0x0316                  ADC1BUFB = 0x316
+                    0x0316                  _ADC1BUFB = 0x316
+                    0x0318                  ADC1BUFC = 0x318
+                    0x0318                  _ADC1BUFC = 0x318
+                    0x031a                  ADC1BUFD = 0x31a
+                    0x031a                  _ADC1BUFD = 0x31a
+                    0x031c                  ADC1BUFE = 0x31c
+                    0x031c                  _ADC1BUFE = 0x31c
+                    0x031e                  ADC1BUFF = 0x31e
+                    0x031e                  _ADC1BUFF = 0x31e
+                    0x0320                  AD1CON1 = 0x320
+                    0x0320                  _AD1CON1 = 0x320
+                    0x0320                  _AD1CON1bits = 0x320
+                    0x0322                  AD1CON2 = 0x322
+                    0x0322                  _AD1CON2 = 0x322
+                    0x0322                  _AD1CON2bits = 0x322
+                    0x0324                  AD1CON3 = 0x324
+                    0x0324                  _AD1CON3 = 0x324
+                    0x0324                  _AD1CON3bits = 0x324
+                    0x0328                  AD1CHS = 0x328
+                    0x0328                  _AD1CHS = 0x328
+                    0x0328                  _AD1CHSbits = 0x328
+                    0x032c                  AD1PCFG = 0x32c
+                    0x032c                  _AD1PCFG = 0x32c
+                    0x032c                  _AD1PCFGbits = 0x32c
+                    0x0330                  AD1CSSL = 0x330
+                    0x0330                  _AD1CSSL = 0x330
+                    0x0330                  _AD1CSSLbits = 0x330
+                    0x033c                  CTMUCON = 0x33c
+                    0x033c                  _CTMUCON = 0x33c
+                    0x033c                  _CTMUCONbits = 0x33c
+                    0x033e                  CTMUICON = 0x33e
+                    0x033e                  _CTMUICON = 0x33e
+                    0x033e                  _CTMUICONbits = 0x33e
+                    0x0620                  ALRMVAL = 0x620
+                    0x0620                  _ALRMVAL = 0x620
+                    0x0622                  ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPTbits = 0x622
+                    0x0624                  RTCVAL = 0x624
+                    0x0624                  _RTCVAL = 0x624
+                    0x0626                  RCFGCAL = 0x626
+                    0x0626                  _RCFGCAL = 0x626
+                    0x0626                  _RCFGCALbits = 0x626
+                    0x0630                  CMSTAT = 0x630
+                    0x0630                  _CMSTAT = 0x630
+                    0x0630                  _CMSTATbits = 0x630
+                    0x0632                  CVRCON = 0x632
+                    0x0632                  _CVRCON = 0x632
+                    0x0632                  _CVRCONbits = 0x632
+                    0x0634                  CM1CON = 0x634
+                    0x0634                  _CM1CON = 0x634
+                    0x0634                  _CM1CONbits = 0x634
+                    0x0636                  CM2CON = 0x636
+                    0x0636                  _CM2CON = 0x636
+                    0x0636                  _CM2CONbits = 0x636
+                    0x0640                  CRCCON = 0x640
+                    0x0640                  _CRCCON = 0x640
+                    0x0640                  _CRCCONbits = 0x640
+                    0x0642                  CRCXOR = 0x642
+                    0x0642                  _CRCXOR = 0x642
+                    0x0644                  CRCDAT = 0x644
+                    0x0644                  _CRCDAT = 0x644
+                    0x0646                  CRCWDAT = 0x646
+                    0x0646                  _CRCWDAT = 0x646
+                    0x0740                  RCON = 0x740
+                    0x0740                  _RCON = 0x740
+                    0x0740                  _RCONbits = 0x740
+                    0x0742                  OSCCON = 0x742
+                    0x0742                  _OSCCON = 0x742
+                    0x0742                  _OSCCONbits = 0x742
+                    0x0744                  CLKDIV = 0x744
+                    0x0744                  _CLKDIV = 0x744
+                    0x0744                  _CLKDIVbits = 0x744
+                    0x0748                  OSCTUN = 0x748
+                    0x0748                  _OSCTUN = 0x748
+                    0x0748                  _OSCTUNbits = 0x748
+                    0x074e                  REFOCON = 0x74e
+                    0x074e                  _REFOCON = 0x74e
+                    0x074e                  _REFOCONbits = 0x74e
+                    0x0756                  HLVDCON = 0x756
+                    0x0756                  _HLVDCON = 0x756
+                    0x0756                  _HLVDCONbits = 0x756
+                    0x0758                  DSCON = 0x758
+                    0x0758                  _DSCON = 0x758
+                    0x0758                  _DSCONbits = 0x758
+                    0x075a                  DSWSRC = 0x75a
+                    0x075a                  _DSWSRC = 0x75a
+                    0x075a                  _DSWSRCbits = 0x75a
+                    0x075c                  DSGPR0 = 0x75c
+                    0x075c                  _DSGPR0 = 0x75c
+                    0x075e                  DSGPR1 = 0x75e
+                    0x075e                  _DSGPR1 = 0x75e
+                    0x0760                  NVMCON = 0x760
+                    0x0760                  _NVMCON = 0x760
+                    0x0760                  _NVMCONbits = 0x760
+                    0x0766                  NVMKEY = 0x766
+                    0x0766                  _NVMKEY = 0x766
+                    0x0766                  _NVMKEYbits = 0x766
+                    0x0770                  PMD1 = 0x770
+                    0x0770                  _PMD1 = 0x770
+                    0x0770                  _PMD1bits = 0x770
+                    0x0772                  PMD2 = 0x772
+                    0x0772                  _PMD2 = 0x772
+                    0x0772                  _PMD2bits = 0x772
+                    0x0774                  PMD3 = 0x774
+                    0x0774                  _PMD3 = 0x774
+                    0x0774                  _PMD3bits = 0x774
+                    0x0776                  PMD4 = 0x776
+                    0x0776                  _PMD4 = 0x776
+                    0x0776                  _PMD4bits = 0x776
+                    0x0140                  IC1 = 0x140
+                    0x0140                  _IC1 = 0x140
+                    0x0180                  OC1 = 0x180
+                    0x0180                  _OC1 = 0x180
+                    0x0240                  SPI1 = 0x240
+                    0x0240                  _SPI1 = 0x240
+                    0x0220                  UART1 = 0x220
+                    0x0220                  _UART1 = 0x220
+                    0x0230                  UART2 = 0x230
+                    0x0230                  _UART2 = 0x230
+                    0x0001                  __MPLAB_BUILD = 0x1
+START GROUP
+LOAD c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a
+LOAD c:/program files/microchip/mplab c30/bin/bin/../../lib\libm-coff.a
+LOAD c:/program files/microchip/mplab c30/bin/bin/../../lib\libc-coff.a
+END GROUP
+OUTPUT(TV-B-Gone.cof coff-pic30)
+LOAD data_init
+LOAD default_isr
+
+__c30_signature
+                  0x000000         0x1e
+ __c30_signature
+                  0x000000          0x6 main.o
+ __c30_signature
+                  0x000006          0x6 WORLDcodes.o
+ __c30_signature
+                  0x00000c          0x6 c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(crt0_standard.o)
+ __c30_signature
+                  0x000012          0x6 c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(delay32.o)
+ __c30_signature
+                  0x000018          0x6 c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(data_init_standard.o)
+
+.ndata              0x0800        0x112
+ .ndata             0x0800        0x112 WORLDcodes.o
+                    0x0800                  NApowerCodes
+                    0x0800                  EUpowerCodes
+
+.const              0x8290       0x10ce load address 0x000290  
+ .const             0x8290       0x10ce WORLDcodes.o
+                    0x8290                  num_EUcodes
+                    0x8291                  num_NAcodes
+                    0x8292                  code_na136Code
+                    0x82b8                  code_na136Times
+                    0x82d0                  code_na135Code
+                    0x82f6                  code_na135Times
+                    0x830a                  code_na134Code
+                    0x832a                  code_na133Code
+                    0x8338                  code_na133Times
+                    0x834c                  code_na132Code
+                    0x835a                  code_na132Times
+                    0x836a                  code_na131Code
+                    0x837e                  code_na130Code
+                    0x8398                  code_na130Times
+                    0x83ac                  code_na129Code
+                    0x83c0                  code_na128Code
+                    0x83da                  code_na127Code
+                    0x83e2                  code_na127Times
+                    0x83f2                  code_na126Code
+                    0x8406                  code_na125Code
+                    0x841a                  code_na124Code
+                    0x842e                  code_na124Times
+                    0x8446                  code_na123Code
+                    0x845a                  code_na122Code
+                    0x8472                  code_na122Times
+                    0x8486                  code_na121Code
+                    0x849a                  code_na120Code
+                    0x84ae                  code_na119Code
+                    0x84c2                  code_na119Times
+                    0x84da                  code_na118Code
+                    0x84ee                  code_na117Code
+                    0x8502                  code_na117Times
+                    0x851a                  code_na116Code
+                    0x852e                  code_na115Code
+                    0x8548                  code_na115Times
+                    0x855c                  code_na114Code
+                    0x8570                  code_na114Times
+                    0x8588                  code_na113Code
+                    0x85a8                  code_na113Times
+                    0x85bc                  code_na112Code
+                    0x85d0                  code_na111Code
+                    0x85e4                  code_na110Code
+                    0x85f8                  code_na109Code
+                    0x860c                  code_na109Times
+                    0x8624                  code_na108Code
+                    0x8638                  code_na107Code
+                    0x864c                  code_na106Code
+                    0x8660                  code_na105Code
+                    0x8674                  code_na104Code
+                    0x8688                  code_na103Code
+                    0x869c                  code_na102Code
+                    0x86b6                  code_na102Times
+                    0x86ca                  code_na101Code
+                    0x86de                  code_na100Code
+                    0x86ec                  code_na100Times
+                    0x86fc                  code_na099Code
+                    0x8710                  code_na098Code
+                    0x8724                  code_na097Code
+                    0x8738                  code_na096Code
+                    0x874c                  code_na095Code
+                    0x8760                  code_na095Times
+                    0x8774                  code_na094Code
+                    0x8782                  code_na093Code
+                    0x87a2                  code_na093Times
+                    0x87b6                  code_na092Code
+                    0x87cc                  code_na092Times
+                    0x87dc                  code_na091Code
+                    0x87ee                  code_na091Times
+                    0x87fe                  code_na090Code
+                    0x880c                  code_na090Times
+                    0x8824                  code_na089Code
+                    0x8838                  code_na088Code
+                    0x884c                  code_na087Code
+                    0x8860                  code_na087Times
+                    0x8878                  code_na086Code
+                    0x88a4                  code_na086Times
+                    0x88b8                  code_na085Code
+                    0x88ce                  code_na085Times
+                    0x88e2                  code_na084Code
+                    0x890e                  code_na084Times
+                    0x8922                  code_na083Code
+                    0x8930                  code_na082Code
+                    0x893e                  code_na082Times
+                    0x8956                  code_na081Code
+                    0x8966                  code_na081Times
+                    0x8976                  code_na080Code
+                    0x8982                  code_na079Code
+                    0x8996                  code_na078Code
+                    0x89a4                  code_na078Times
+                    0x89b0                  code_na077Code
+                    0x89be                  code_na076Code
+                    0x89d2                  code_na075Code
+                    0x89ec                  code_na075Times
+                    0x8a00                  code_na074Code
+                    0x8a14                  code_na073Code
+                    0x8a28                  code_na072Code
+                    0x8a3c                  code_na071Code
+                    0x8a44                  code_na071Times
+                    0x8a4c                  code_na070Code
+                    0x8a5a                  code_na070Times
+                    0x8a6a                  code_na069Code
+                    0x8a7e                  code_na068Code
+                    0x8a8a                  code_na068Times
+                    0x8a9a                  code_na067Code
+                    0x8aae                  code_na066Code
+                    0x8abc                  code_na066Times
+                    0x8acc                  code_na065Code
+                    0x8af0                  code_na065Times
+                    0x8b04                  code_na064Code
+                    0x8b16                  code_na063Code
+                    0x8b2a                  code_na062Code
+                    0x8b3e                  code_na061Code
+                    0x8b52                  code_na060Code
+                    0x8b66                  code_na059Code
+                    0x8b7a                  code_na058Code
+                    0x8b86                  code_na058Times
+                    0x8b9a                  code_na057Code
+                    0x8ba4                  code_na057Times
+                    0x8bb4                  code_na056Code
+                    0x8bbc                  code_na056Times
+                    0x8bcc                  code_na055Code
+                    0x8bd8                  code_na055Times
+                    0x8be8                  code_na054Code
+                    0x8bf4                  code_na053Code
+                    0x8c02                  code_na053Times
+                    0x8c12                  code_na052Code
+                    0x8c26                  code_na051Code
+                    0x8c3a                  code_na050Code
+                    0x8c4c                  code_na050Times
+                    0x8c5c                  code_na049Code
+                    0x8c64                  code_na049Times
+                    0x8c6c                  code_na048Code
+                    0x8c80                  code_na047Code
+                    0x8c94                  code_na046Code
+                    0x8ca2                  code_na046Times
+                    0x8cbe                  code_na045Code
+                    0x8cd2                  code_na045Times
+                    0x8cea                  code_na044Code
+                    0x8cfe                  code_na044Times
+                    0x8d16                  code_na043Code
+                    0x8d22                  code_na043Times
+                    0x8d32                  code_na042Code
+                    0x8d46                  code_na042Times
+                    0x8d5e                  code_na041Code
+                    0x8d6a                  code_na041Times
+                    0x8d7a                  code_na040Code
+                    0x8d82                  code_na040Times
+                    0x8d8e                  code_na039Code
+                    0x8d94                  code_na039Times
+                    0x8d9c                  code_na038Code
+                    0x8db0                  code_na037Code
+                    0x8db8                  code_na037Times
+                    0x8dc4                  code_na036Code
+                    0x8dcc                  code_na036Times
+                    0x8ddc                  code_na035Code
+                    0x8de8                  code_na035Times
+                    0x8df8                  code_na034Code
+                    0x8e0c                  code_na033Code
+                    0x8e38                  code_na033Times
+                    0x8e4c                  code_na032Code
+                    0x8e60                  code_na031Code
+                    0x8e6e                  code_na031Times
+                    0x8e82                  code_na030Code
+                    0x8e96                  code_na029Code
+                    0x8ea4                  code_na029Times
+                    0x8eb8                  code_na028Code
+                    0x8ec6                  code_na028Times
+                    0x8ed6                  code_na027Code
+                    0x8ee8                  code_na026Code
+                    0x8efa                  code_na026Times
+                    0x8f0e                  code_na025Code
+                    0x8f28                  code_na025Times
+                    0x8f3c                  code_na024Code
+                    0x8f4c                  code_na024Times
+                    0x8f60                  code_na023Code
+                    0x8f70                  code_na023Times
+                    0x8f80                  code_na022Code
+                    0x8f94                  code_na022Times
+                    0x8fac                  code_na021Code
+                    0x8fc0                  code_na021Times
+                    0x8fd4                  code_na020Code
+                    0x8fe8                  code_na020Times
+                    0x9004                  code_na019Code
+                    0x9030                  code_na019Times
+                    0x9044                  code_na018Code
+                    0x907c                  code_na018Times
+                    0x9090                  code_na017Code
+                    0x90a4                  code_na017Times
+                    0x90bc                  code_na016Code
+                    0x90ca                  code_na016Times
+                    0x90d6                  code_na015Code
+                    0x90ea                  code_na014Code
+                    0x90fe                  code_na013Code
+                    0x9116                  code_na013Times
+                    0x912e                  code_na012Code
+                    0x9148                  code_na012Times
+                    0x915c                  code_na011Code
+                    0x9170                  code_na011Times
+                    0x918c                  code_na010Code
+                    0x919e                  code_na010Times
+                    0x91ae                  code_na009Code
+                    0x91c2                  code_na009Times
+                    0x91da                  code_na008Code
+                    0x91fa                  code_na008Times
+                    0x920e                  code_na007Code
+                    0x9220                  code_na007Times
+                    0x9234                  code_na006Code
+                    0x9254                  code_na006Times
+                    0x9268                  code_na005Code
+                    0x9276                  code_na005Times
+                    0x928a                  code_na004Code
+                    0x929e                  code_na004Times
+                    0x92ba                  code_na003Code
+                    0x92d0                  code_na003Times
+                    0x92e0                  code_na002Code
+                    0x930c                  code_na002Times
+                    0x9320                  code_na001Code
+                    0x9332                  code_na001Times
+                    0x9342                  code_na000Code
+                    0x934e                  code_na000Times
+
+.text             0x00135e        0x100
+ .text            0x00135e        0x100 main.o
+                  0x00135e                  startPWM
+                  0x001376                  stopPWM
+                  0x00137e                  readBits
+                  0x0013b0                  delay_ten_us
+                  0x0013b8                  xmitCodeElement
+                  0x0013e0                  main
+
+.dinit            0x00145e         0xc0
+ .dinit           0x00145e         0xc0 data_init
+
+.text             0x00151e         0x1c
+ .text            0x00151e         0x1c c:/program files/microchip/mplab c30/bin/bin/../../lib\libpic30-coff.a(delay32.o)
+                  0x00151e                  __delay32
+
+.isr              0x00153a          0x2
+ .isr             0x00153a          0x2 default_isr
+                  0x00153a                  _DefaultInterrupt
